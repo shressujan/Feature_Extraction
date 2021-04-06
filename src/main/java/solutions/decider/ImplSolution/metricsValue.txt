@@ -1,0 +1,871 @@
+Computing Satisfying Solutions ...
+Current Time: 2021-03-29 13:17:51.927
+-----------------------------------------
+Solution #1 has been generated.
+Eq.Class #1
+
+TATI(NameSpace)= 1
+TATI(Variable)= 1
+TATI(Relationship)= 1
+TATI(Role)= 1
+TATI(DecisionSpace)= 1
+TATI(Participant)= 1
+TATI(User)= 1
+TATI(Viewer)= 1
+TATI(Developer)= 1
+Overall_TATI(solution:1)= 9
+
+NCT(NameSpace)= 2
+NCT(Variable)= 2
+NCT(Relationship)= 2
+NCT(Role)= 1
+NCT(DecisionSpace)= 1
+NCT(Participant)= 1
+NCT(User)= 1
+NCT(Viewer)= 1
+NCT(Developer)= 1
+Overall_NCT(solution:1)= 12
+
+NCRF(NameSpace)= 1
+NCRF(Variable)= 1
+NCRF(Relationship)= 1
+NCRF(Role)= 1
+NCRF(DecisionSpace)= 1
+NCRF(Participant)= 0
+NCRF(User)= 1
+NCRF(Viewer)= 1
+NCRF(Developer)= 1
+Overall_NCRF(solution:1)= 8
+
+ANV(NameSpace)= 0
+ANV(Variable)= 0
+ANV(Relationship)= 0
+ANV(Role)= 0
+ANV(DecisionSpace)= 0
+ANV(Participant)= 9
+ANV(User)= 4
+ANV(Viewer)= 4
+ANV(Developer)= 4
+Overall_ANV(solution:1)= 21
+Overall_NIC(solution:1)= 12
+Overall_NFK(solution:1)= 7
+Eq.Classes: 1 / 1
+-----------------------------------------
+-----------------------------------------
+Solution #2 has been generated.
+Eq.Class #1
+-----------------------------------------
+Solution #3 has been generated.
+Eq.Class #2
+
+TATI(NameSpace)= 1
+TATI(Variable)= 1
+TATI(Relationship)= 1
+TATI(Role)= 1
+TATI(DecisionSpace)= 1
+TATI(Participant)= 4
+TATI(User)= 1
+TATI(Viewer)= 1
+TATI(Developer)= 1
+Overall_TATI(solution:3)= 12
+
+NCT(NameSpace)= 2
+NCT(Variable)= 2
+NCT(Relationship)= 2
+NCT(Role)= 1
+NCT(DecisionSpace)= 1
+NCT(Participant)= 1
+NCT(User)= 1
+NCT(Viewer)= 1
+NCT(Developer)= 1
+Overall_NCT(solution:3)= 12
+
+NCRF(NameSpace)= 1
+NCRF(Variable)= 1
+NCRF(Relationship)= 1
+NCRF(Role)= 1
+NCRF(DecisionSpace)= 1
+NCRF(Participant)= 0
+NCRF(User)= 1
+NCRF(Viewer)= 1
+NCRF(Developer)= 1
+Overall_NCRF(solution:3)= 8
+
+ANV(NameSpace)= 0
+ANV(Variable)= 0
+ANV(Relationship)= 0
+ANV(Role)= 0
+ANV(DecisionSpace)= 0
+ANV(Participant)= 0
+ANV(User)= 0
+ANV(Viewer)= 0
+ANV(Developer)= 0
+Overall_ANV(solution:3)= 0
+Overall_NIC(solution:3)= 15
+Overall_NFK(solution:3)= 7
+Eq.Classes: 2 / 3
+-----------------------------------------
+-----------------------------------------
+Solution #4 has been generated.
+Eq.Class #3
+
+TATI(NameSpace)= 1
+TATI(Variable)= 1
+TATI(Relationship)= 1
+TATI(Role)= 1
+TATI(DecisionSpace)= 1
+TATI(Participant)= 1
+TATI(User)= 1
+TATI(Viewer)= 1
+TATI(Developer)= 1
+Overall_TATI(solution:4)= 9
+
+NCT(NameSpace)= 2
+NCT(Variable)= 2
+NCT(Relationship)= 1
+NCT(Role)= 1
+NCT(DecisionSpace)= 1
+NCT(Participant)= 1
+NCT(User)= 1
+NCT(Viewer)= 1
+NCT(Developer)= 1
+Overall_NCT(solution:4)= 11
+
+NCRF(NameSpace)= 1
+NCRF(Variable)= 1
+NCRF(Relationship)= 1
+NCRF(Role)= 1
+NCRF(DecisionSpace)= 1
+NCRF(Participant)= 0
+NCRF(User)= 1
+NCRF(Viewer)= 1
+NCRF(Developer)= 1
+Overall_NCRF(solution:4)= 8
+
+ANV(NameSpace)= 0
+ANV(Variable)= 0
+ANV(Relationship)= 0
+ANV(Role)= 0
+ANV(DecisionSpace)= 0
+ANV(Participant)= 9
+ANV(User)= 4
+ANV(Viewer)= 4
+ANV(Developer)= 4
+Overall_ANV(solution:4)= 21
+Overall_NIC(solution:4)= 11
+Overall_NFK(solution:4)= 8
+Eq.Classes: 3 / 4
+-----------------------------------------
+-----------------------------------------
+Solution #5 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #6 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #7 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #8 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #9 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #10 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #11 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #12 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #13 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #14 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #15 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #16 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #17 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #18 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #19 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #20 has been generated.
+Eq.Class #4
+
+TATI(NameSpace)= 1
+TATI(Variable)= 1
+TATI(Relationship)= 1
+TATI(Role)= 1
+TATI(DecisionSpace)= 1
+TATI(Participant)= 1
+TATI(User)= 1
+TATI(Viewer)= 1
+TATI(Developer)= 1
+Overall_TATI(solution:20)= 9
+
+NCT(NameSpace)= 1
+NCT(Variable)= 1
+NCT(Relationship)= 2
+NCT(Role)= 1
+NCT(DecisionSpace)= 1
+NCT(Participant)= 1
+NCT(User)= 1
+NCT(Viewer)= 1
+NCT(Developer)= 1
+Overall_NCT(solution:20)= 10
+
+NCRF(NameSpace)= 1
+NCRF(Variable)= 1
+NCRF(Relationship)= 1
+NCRF(Role)= 1
+NCRF(DecisionSpace)= 1
+NCRF(Participant)= 0
+NCRF(User)= 1
+NCRF(Viewer)= 1
+NCRF(Developer)= 1
+Overall_NCRF(solution:20)= 8
+
+ANV(NameSpace)= 0
+ANV(Variable)= 0
+ANV(Relationship)= 0
+ANV(Role)= 0
+ANV(DecisionSpace)= 0
+ANV(Participant)= 9
+ANV(User)= 4
+ANV(Viewer)= 4
+ANV(Developer)= 4
+Overall_ANV(solution:20)= 21
+Overall_NIC(solution:20)= 10
+Overall_NFK(solution:20)= 9
+Eq.Classes: 4 / 20
+-----------------------------------------
+-----------------------------------------
+Solution #21 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #22 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #23 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #24 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #25 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #26 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #27 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #28 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #29 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #30 has been generated.
+Eq.Class #5
+
+TATI(NameSpace)= 1
+TATI(Variable)= 1
+TATI(Relationship)= 1
+TATI(Role)= 1
+TATI(DecisionSpace)= 1
+TATI(Participant)= 4
+TATI(User)= 1
+TATI(Viewer)= 1
+TATI(Developer)= 1
+Overall_TATI(solution:30)= 12
+
+NCT(NameSpace)= 2
+NCT(Variable)= 2
+NCT(Relationship)= 1
+NCT(Role)= 1
+NCT(DecisionSpace)= 1
+NCT(Participant)= 1
+NCT(User)= 1
+NCT(Viewer)= 1
+NCT(Developer)= 2
+Overall_NCT(solution:30)= 12
+
+NCRF(NameSpace)= 1
+NCRF(Variable)= 1
+NCRF(Relationship)= 1
+NCRF(Role)= 1
+NCRF(DecisionSpace)= 1
+NCRF(Participant)= 0
+NCRF(User)= 1
+NCRF(Viewer)= 1
+NCRF(Developer)= 1
+Overall_NCRF(solution:30)= 8
+
+ANV(NameSpace)= 0
+ANV(Variable)= 0
+ANV(Relationship)= 0
+ANV(Role)= 0
+ANV(DecisionSpace)= 0
+ANV(Participant)= 0
+ANV(User)= 0
+ANV(Viewer)= 0
+ANV(Developer)= 0
+Overall_ANV(solution:30)= 0
+Overall_NIC(solution:30)= 14
+Overall_NFK(solution:30)= 9
+Eq.Classes: 5 / 30
+-----------------------------------------
+-----------------------------------------
+Solution #31 has been generated.
+Eq.Class #6
+
+TATI(NameSpace)= 1
+TATI(Variable)= 1
+TATI(Relationship)= 1
+TATI(Role)= 1
+TATI(DecisionSpace)= 1
+TATI(Participant)= 4
+TATI(User)= 1
+TATI(Viewer)= 1
+TATI(Developer)= 1
+Overall_TATI(solution:31)= 12
+
+NCT(NameSpace)= 1
+NCT(Variable)= 1
+NCT(Relationship)= 2
+NCT(Role)= 1
+NCT(DecisionSpace)= 1
+NCT(Participant)= 1
+NCT(User)= 1
+NCT(Viewer)= 1
+NCT(Developer)= 1
+Overall_NCT(solution:31)= 10
+
+NCRF(NameSpace)= 1
+NCRF(Variable)= 1
+NCRF(Relationship)= 1
+NCRF(Role)= 1
+NCRF(DecisionSpace)= 1
+NCRF(Participant)= 0
+NCRF(User)= 1
+NCRF(Viewer)= 1
+NCRF(Developer)= 1
+Overall_NCRF(solution:31)= 8
+
+ANV(NameSpace)= 0
+ANV(Variable)= 0
+ANV(Relationship)= 0
+ANV(Role)= 0
+ANV(DecisionSpace)= 0
+ANV(Participant)= 0
+ANV(User)= 0
+ANV(Viewer)= 0
+ANV(Developer)= 0
+Overall_ANV(solution:31)= 0
+Overall_NIC(solution:31)= 13
+Overall_NFK(solution:31)= 9
+Eq.Classes: 6 / 31
+-----------------------------------------
+-----------------------------------------
+Solution #32 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #33 has been generated.
+Eq.Class #7
+
+TATI(NameSpace)= 1
+TATI(Variable)= 1
+TATI(Relationship)= 1
+TATI(Role)= 1
+TATI(DecisionSpace)= 1
+TATI(Participant)= 1
+TATI(User)= 1
+TATI(Viewer)= 1
+TATI(Developer)= 1
+Overall_TATI(solution:33)= 9
+
+NCT(NameSpace)= 1
+NCT(Variable)= 1
+NCT(Relationship)= 1
+NCT(Role)= 1
+NCT(DecisionSpace)= 1
+NCT(Participant)= 1
+NCT(User)= 1
+NCT(Viewer)= 1
+NCT(Developer)= 1
+Overall_NCT(solution:33)= 9
+
+NCRF(NameSpace)= 1
+NCRF(Variable)= 1
+NCRF(Relationship)= 1
+NCRF(Role)= 1
+NCRF(DecisionSpace)= 1
+NCRF(Participant)= 0
+NCRF(User)= 1
+NCRF(Viewer)= 1
+NCRF(Developer)= 1
+Overall_NCRF(solution:33)= 8
+
+ANV(NameSpace)= 0
+ANV(Variable)= 0
+ANV(Relationship)= 0
+ANV(Role)= 0
+ANV(DecisionSpace)= 0
+ANV(Participant)= 9
+ANV(User)= 4
+ANV(Viewer)= 4
+ANV(Developer)= 4
+Overall_ANV(solution:33)= 21
+Overall_NIC(solution:33)= 9
+Overall_NFK(solution:33)= 10
+Eq.Classes: 7 / 33
+-----------------------------------------
+-----------------------------------------
+Solution #34 has been generated.
+Eq.Class #8
+
+TATI(NameSpace)= 1
+TATI(Variable)= 1
+TATI(Relationship)= 1
+TATI(Role)= 1
+TATI(DecisionSpace)= 1
+TATI(Participant)= 4
+TATI(User)= 1
+TATI(Viewer)= 1
+TATI(Developer)= 1
+Overall_TATI(solution:34)= 12
+
+NCT(NameSpace)= 2
+NCT(Variable)= 2
+NCT(Relationship)= 1
+NCT(Role)= 1
+NCT(DecisionSpace)= 1
+NCT(Participant)= 1
+NCT(User)= 1
+NCT(Viewer)= 1
+NCT(Developer)= 1
+Overall_NCT(solution:34)= 11
+
+NCRF(NameSpace)= 1
+NCRF(Variable)= 1
+NCRF(Relationship)= 1
+NCRF(Role)= 1
+NCRF(DecisionSpace)= 1
+NCRF(Participant)= 0
+NCRF(User)= 1
+NCRF(Viewer)= 1
+NCRF(Developer)= 1
+Overall_NCRF(solution:34)= 8
+
+ANV(NameSpace)= 0
+ANV(Variable)= 0
+ANV(Relationship)= 0
+ANV(Role)= 0
+ANV(DecisionSpace)= 0
+ANV(Participant)= 0
+ANV(User)= 0
+ANV(Viewer)= 0
+ANV(Developer)= 0
+Overall_ANV(solution:34)= 0
+Overall_NIC(solution:34)= 14
+Overall_NFK(solution:34)= 8
+Eq.Classes: 8 / 34
+-----------------------------------------
+-----------------------------------------
+Solution #35 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #36 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #37 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #38 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #39 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #40 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #41 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #42 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #43 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #44 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #45 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #46 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #47 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #48 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #49 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #50 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #51 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #52 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #53 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #54 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #55 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #56 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #57 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #58 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #59 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #60 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #61 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #62 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #63 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #64 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #65 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #66 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #67 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #68 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #69 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #70 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #71 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #72 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #73 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #74 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #75 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #76 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #77 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #78 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #79 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #80 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #81 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #82 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #83 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #84 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #85 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #86 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #87 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #88 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #89 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #90 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #91 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #92 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #93 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #94 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #95 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #96 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #97 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #98 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #99 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #100 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #101 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #102 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #103 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #104 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #105 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #106 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #107 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #108 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #109 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #110 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #111 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #112 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #113 has been generated.
+Eq.Class #9
+
+TATI(NameSpace)= 1
+TATI(Variable)= 1
+TATI(Relationship)= 1
+TATI(Role)= 1
+TATI(DecisionSpace)= 1
+TATI(Participant)= 4
+TATI(User)= 1
+TATI(Viewer)= 1
+TATI(Developer)= 1
+Overall_TATI(solution:113)= 12
+
+NCT(NameSpace)= 1
+NCT(Variable)= 1
+NCT(Relationship)= 1
+NCT(Role)= 1
+NCT(DecisionSpace)= 1
+NCT(Participant)= 1
+NCT(User)= 1
+NCT(Viewer)= 1
+NCT(Developer)= 1
+Overall_NCT(solution:113)= 9
+
+NCRF(NameSpace)= 1
+NCRF(Variable)= 1
+NCRF(Relationship)= 1
+NCRF(Role)= 1
+NCRF(DecisionSpace)= 1
+NCRF(Participant)= 0
+NCRF(User)= 1
+NCRF(Viewer)= 1
+NCRF(Developer)= 1
+Overall_NCRF(solution:113)= 8
+
+ANV(NameSpace)= 0
+ANV(Variable)= 0
+ANV(Relationship)= 0
+ANV(Role)= 0
+ANV(DecisionSpace)= 0
+ANV(Participant)= 0
+ANV(User)= 0
+ANV(Viewer)= 0
+ANV(Developer)= 0
+Overall_ANV(solution:113)= 0
+Overall_NIC(solution:113)= 12
+Overall_NFK(solution:113)= 10
+Eq.Classes: 9 / 113
+-----------------------------------------
+-----------------------------------------
+Solution #114 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #115 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #116 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #117 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #118 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #119 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #120 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #121 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #122 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #123 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #124 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #125 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #126 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #127 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #128 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #129 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #130 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #131 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #132 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #133 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #134 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #135 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #136 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #137 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #138 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #139 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #140 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #141 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #142 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #143 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #144 has been generated.
+Eq.Class #10
+
+-----------------------------------------
+# Eq.Classes: 9 / 145
+Current Time: 2021-03-29 13:23:10.680
+No more Satisfying solutions
