@@ -29,27 +29,27 @@ public class FeatureExtractor {
     private String alsFileName;
 
     public static void main(String[] args) {
-        String alloyFileDirectory;
+        String alloyFileDirectory = null;
         String solutionDirectory;
         String solutionTxtPath;
         FeatureExtractor fe = new FeatureExtractor();
         ParetoOptimalSolutions ps = new ParetoOptimalSolutions();
-//        if (args.length > 2)
-            alloyFileDirectory = "src/main/java/models/customerOrderObjectModel.als";
-            solutionDirectory = "src/main/java/solutions/customer_order/ImplSolution";
-            solutionTxtPath = "src/main/java/solutions/customer_order/customerOrderObjectModel.txt";
+        if (args.length > 2)
+            alloyFileDirectory = args[1];   //"src/main/java/models/customerOrderObjectModel.als"
+            solutionDirectory = args[2];    //"src/main/java/solutions/customer_order/ImplSolution";
+            solutionTxtPath = args[3];      //"src/main/java/solutions/customer_order/customerOrderObjectModel.txt";
             String[] tmp = alloyFileDirectory.split(SLASH);
             fe.alsFileName = tmp[tmp.length - 1].split(DOT)[0].concat(CSV);
 
-//        try {
-//            fe.readAlloyFileIntoObjectModelFeature(alloyFileDirectory);
-//            fe.readFromFilesInDirectory(solutionDirectory);
-//            ps.loadMeasurements(solutionTxtPath);
-//            fe.measurements = ps.getMeasurements();
-//            fe.loadFeatures();
-//        } catch (IOException | ParserConfigurationException | SAXException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            fe.readAlloyFileIntoObjectModelFeature(alloyFileDirectory);
+            fe.readFromFilesInDirectory(solutionDirectory);
+            ps.loadMeasurements(solutionTxtPath);
+            fe.measurements = ps.getMeasurements();
+            fe.loadFeatures();
+        } catch (IOException | ParserConfigurationException | SAXException e) {
+            e.printStackTrace();
+        }
 
 
     }
