@@ -1,3 +1,5 @@
+package approach_1;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -88,7 +90,7 @@ public class OMFeature {
 
     @Override
     public String toString() {
-        return "OMFeature{" +
+        return "approach_2.OMFeature{" +
                 "object='" + object + '\'' +
                 ", attributes=" + attributes +
                 ", hasID=" + hasID +
