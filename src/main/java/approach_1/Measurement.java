@@ -1,3 +1,5 @@
+package approach_1;
+
 import java.util.Comparator;
 
 public class Measurement {
@@ -82,7 +84,7 @@ public class Measurement {
 
     @Override
     public String toString() {
-        return "Measurement{" +
+        return "approach_2.Measurement{" +
                 "solutionName='" + solutionName + '\'' +
                 ", insertTime=" + insertTime +
                 ", selectTime=" + selectTime +
