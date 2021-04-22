@@ -1,4 +1,4 @@
-package approach_2;
+package approach_2.FeatureExtractor;
 
 import org.apache.commons.io.FileUtils;
 import org.w3c.dom.Document;
@@ -42,11 +42,24 @@ public class FeatureExtractor {
         FeatureExtractor fe = new FeatureExtractor();
         ParetoOptimalSolutions ps = new ParetoOptimalSolutions();
 //        if (args.length > 2)
-            alloyFileDirectory = "src/main/java/models/decider.als";
-            solutionDirectory = "src/main/java/solutions/decider/ImplSolution";
-            solutionTxtPath = "src/main/java/solutions/decider/decider.txt";
-            String[] tmp = alloyFileDirectory.split(SLASH);
-            fe.alsFileName = tmp[tmp.length - 1].split(DOT)[0].concat(CSV);
+//        alloyFileDirectory = "src/main/java/models/decider.als";
+//        solutionDirectory = "src/main/java/solutions/decider/ImplSolution";
+//        solutionTxtPath = "src/main/java/solutions/decider/decider.txt";
+
+//        alloyFileDirectory = "src/main/java/models/customerOrderObjectModel.als";
+//        solutionDirectory = "src/main/java/solutions/customer_order/ImplSolution";
+//        solutionTxtPath = "src/main/java/solutions/customer_order/customerOrderObjectModel.txt";
+
+//        alloyFileDirectory = "src/main/java/models/CSOS.als";
+//        solutionDirectory = "src/main/java/solutions/CSOS/ImplSolution";
+//        solutionTxtPath = "src/main/java/solutions/CSOS/CSOS.txt";
+
+        alloyFileDirectory = "src/main/java/models/flagship.als";
+        solutionDirectory = "src/main/java/solutions/flagship/ImplSolution";
+        solutionTxtPath = "src/main/java/solutions/flagship/flagship.txt";
+
+        String[] tmp = alloyFileDirectory.split(SLASH);
+        fe.alsFileName = tmp[tmp.length - 1].split(DOT)[0].concat(CSV);
 
         try {
             fe.readAlloyFileIntoObjectModelFeature(alloyFileDirectory);
@@ -119,7 +132,7 @@ public class FeatureExtractor {
                 else if (line.contains("sig") && line.contains("extends") && line.contains("Association")) {
 
                     String[] tokens = line.split(SPACE);
-                    String object = tokens[2];
+                    String association = tokens[2];
 
                     String src = "", dst = "", srcMul ="", dstMul = "";
                     while (!(line = br.readLine()).contains("}")) {
@@ -137,9 +150,9 @@ public class FeatureExtractor {
                         }
                     }
 
-                    associations.add(new Association(object, src, dst, srcMul, dstMul));
+                    associations.add(new Association(association, src, dst, srcMul, dstMul));
 
-                    /* Find the approach_2.OMFeature for given source */
+                    /* Find the ObjectModel for given source */
                     String finalSrc = src;
                     ObjectModel srcOM = objectModels.stream().filter(feature -> feature.getObject().equalsIgnoreCase(finalSrc)).findFirst().orElse(null);
                     /* If object not found */
@@ -148,10 +161,12 @@ public class FeatureExtractor {
                         objectModels.add(srcOM);
                     }
 
-                    if (srcMul.equalsIgnoreCase("one") || srcMul.equalsIgnoreCase("many"))
-                        srcOM.setSrcMultiplicity(true);
+                    if (srcMul.equalsIgnoreCase("one"))
+                        srcOM.setSrcOneToRelation(srcOM.getSrcOneToRelation() + 1);
+                    else if (srcMul.equalsIgnoreCase("many"))
+                        srcOM.setSrcManyToRelation(srcOM.getSrcManyToRelation() + 1);
 
-                    /* Find the approach_2.OMFeature for given destination */
+                    /* Find the ObjectModel for given destination */
                     String finalDst = dst;
                     ObjectModel dstOM = objectModels.stream().filter(feature -> feature.getObject().equalsIgnoreCase(finalDst)).findFirst().orElse(null);
                     /* If object not found */
@@ -160,17 +175,19 @@ public class FeatureExtractor {
                         objectModels.add(dstOM);
                     }
 
-                    if (dstMul.equalsIgnoreCase("one") || dstMul.equalsIgnoreCase("many"))
-                        dstOM.setDstMultiplicity(true);
+                    if (dstMul.equalsIgnoreCase("one"))
+                        dstOM.setDstToOneRelation(dstOM.getDstToOneRelation());
+                    else if (dstMul.equalsIgnoreCase("many"))
+                        dstOM.setDstToManyRelation(dstOM.getDstToManyRelation() + 1);
                 }
             }
         }
 
-        objectModels.forEach(System.out :: println);
+//        objectModels.forEach(System.out :: println);
     }
 
     /**
-     * Method to parse the solution xml files and extract information into approach_2.Feature objects.
+     * Method to parse the solution xml files and extract information into approach_2.FeatureExtractor.Feature objects.
      * @param directory
      * @throws ParserConfigurationException
      * @throws IOException
@@ -181,7 +198,7 @@ public class FeatureExtractor {
         List<File> files = (List<File>) FileUtils.listFiles(filePath, EXTENSION, false);
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
-        /* For each file extract mapping strategy and create approach_2.Feature objects */
+        /* For each file extract mapping strategy and create approach_2.FeatureExtractor.Feature objects */
         for (File file : files) {
             Document document = db.parse(new FileInputStream(file.getCanonicalPath()));
             document.getDocumentElement().normalize();
@@ -242,58 +259,59 @@ public class FeatureExtractor {
 
     /**
      * Load Features with attributes such as mappingStrategy, associationStrategies, and paretoFrontier.
+     * Measurements refer to each measurement(select time, insert time, database space, isParetoFrontier, solutionName)
      */
     public void loadFeatures() throws IOException {
         /* For each solution get all the object mappings and association mappings */
         for (Measurement measurement : measurements) {
             String solution = measurement.getSolutionName();
             boolean paretoFrontier = measurement.isParetoFrontier();
-            Set<Feature> solToOMFeatures = new HashSet<>();
+            Set<Feature> solToFeatures = new HashSet<>();
             Map<String, String> objToMapStrategy = solToObjectMapStrategy.get(solution);
             Map<String, String> ascToMapStrategy = solToAssociationMapStrategy.get(solution);
 
-            /* Iterating over Object to Mapping Strategy */
+            /* Iterating over Object to Mapping Strategy for the selected solution */
             for (Map.Entry<String, String> entry: objToMapStrategy.entrySet()) {
                 String object = entry.getKey();
                 String mapStrategy = entry.getValue();
                 ObjectModel objectModel = objectModels.stream().filter(feature -> feature.getObject().equalsIgnoreCase(object)).findFirst().orElse(null);
                 if (objectModel != null) {
-                    if (objectModel.getParent() != null) {
-                        String parentName = objectModel.getParent().getObject();
-                        for (Map.Entry<String, String> entry1 : objToMapStrategy.entrySet()) {
-                            if (entry1.getKey().equalsIgnoreCase(parentName)) {
-                                solToOMFeatures.add(new Feature(objectModel, mapStrategy, entry1.getValue(), new ArrayList<>(), paretoFrontier));
+
+                    List<String> associationList = new ArrayList<>();
+                    /* Iterating over Association to Mapping Strategy to find all the association related to the
+                       specified object */
+                    for (Map.Entry<String, String> entry1 : ascToMapStrategy.entrySet()) {
+                        String association = entry1.getKey();
+                        String ascMapStrategy = entry1.getValue();
+                        Association ascObject = associations.stream().filter(asc -> asc.getAssociation().equalsIgnoreCase(association)).findFirst().orElse(null);
+
+                        if (ascObject != null) {
+                            if (ascObject.getSrc().equalsIgnoreCase(object) || ascObject.getDst().equalsIgnoreCase(object)) {
+                                associationList.add(ascMapStrategy);
                             }
                         }
-                    } else {
-                        solToOMFeatures.add(new Feature(objectModel, mapStrategy, "none", new ArrayList<>(), paretoFrontier));
+                    }
+
+                    /* Check if the specified objectModel has a parent, if yes add the parents Mapping Strategy to the
+                       newly create Feature */
+                    if (objectModel.getParent() != null) {
+                        String parentName = objectModel.getParent().getObject();
+                        for (Map.Entry<String, String> entry2 : objToMapStrategy.entrySet()) {
+                            String parentMappingStrategy = entry2.getValue();
+                            if (entry2.getKey().equalsIgnoreCase(parentName)) {
+                                solToFeatures.add(new Feature(objectModel, mapStrategy, parentMappingStrategy, associationList, paretoFrontier));
+                            }
+                        }
+                    } else {    /* In case of no parent, set the parentMappingStrategy to none  */
+                        solToFeatures.add(new Feature(objectModel, mapStrategy, "none", associationList, paretoFrontier));
                     }
                 }
             }
-
-            /* Iterating over Association to Sapping Strategy */
-            for (Map.Entry<String, String> entry : ascToMapStrategy.entrySet()) {
-                String association = entry.getKey();
-                String ascMapping = entry.getValue();
-                Association ascObject =  associations.stream().filter(asc -> asc.getAssociation().equalsIgnoreCase(association)).findFirst().orElse(null);
-                /* Main change goes in here */
-                if (ascObject != null &&
-                        object.equalsIgnoreCase(ascObject.getSrc()) || object.equalsIgnoreCase(ascObject.getDst())) {
-                    allOMFeatures.add( new Feature(objectModel, mapStrategy, ascMapping, paretoFrontier));
-                    hasAssociation = true;
-                }
-            }
-                    boolean hasAssociation = false;
-
-                    if (!hasAssociation)
-                        allOMFeatures.add(new Feature(objectModel, mapStrategy, "none", paretoFrontier));
-                }
-            }
+            allOMFeatures.addAll(solToFeatures);
         }
 
 //        allOMFeatures.forEach(System.out :: println);
 
         FileUtil.generateCSVFileWithAllFeatures(allOMFeatures, alsFileName);
-        FileUtil.combine_csv_file();
     }
 }
