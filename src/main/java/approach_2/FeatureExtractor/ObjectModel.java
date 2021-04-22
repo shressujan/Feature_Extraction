@@ -1,4 +1,4 @@
-package approach_2;
+package approach_2.FeatureExtractor;
 
 public class ObjectModel {
 
@@ -8,8 +8,10 @@ public class ObjectModel {
     private ObjectModel parent;
     private int parents;
     private int children;
-    private boolean isSrcMultiplicity;
-    private boolean isDstMultiplicity;
+    private int srcOneToRelation;
+    private int srcManyToRelation;
+    private int dstToOneRelation;
+    private int dstToManyRelation;
 
 
     public ObjectModel(String object) {
@@ -18,8 +20,10 @@ public class ObjectModel {
         this.hasID = false;
         this.parent = null;
         this.parents = 0;
-        this.isSrcMultiplicity = false;
-        this.isDstMultiplicity = false;
+        this.srcOneToRelation = 0;
+        this.srcManyToRelation = 0;
+        this.dstToOneRelation = 0;
+        this.dstToManyRelation = 0;
     }
 
     public String getObject() {
@@ -70,22 +74,37 @@ public class ObjectModel {
         this.children = children;
     }
 
-    public boolean isSrcMultiplicity() {
-        return isSrcMultiplicity;
+    public int getSrcOneToRelation() {
+        return srcOneToRelation;
     }
 
-    public void setSrcMultiplicity(boolean srcMultiplicity) {
-        isSrcMultiplicity = srcMultiplicity;
+    public void setSrcOneToRelation(int srcOneToRelation) {
+        this.srcOneToRelation = srcOneToRelation;
     }
 
-    public boolean isDstMultiplicity() {
-        return isDstMultiplicity;
+    public int getSrcManyToRelation() {
+        return srcManyToRelation;
     }
 
-    public void setDstMultiplicity(boolean dstMultiplicity) {
-        isDstMultiplicity = dstMultiplicity;
+    public void setSrcManyToRelation(int srcManyToRelation) {
+        this.srcManyToRelation = srcManyToRelation;
     }
 
+    public int getDstToOneRelation() {
+        return dstToOneRelation;
+    }
+
+    public void setDstToOneRelation(int dstToOneRelation) {
+        this.dstToOneRelation = dstToOneRelation;
+    }
+
+    public int getDstToManyRelation() {
+        return dstToManyRelation;
+    }
+
+    public void setDstToManyRelation(int dstToManyRelation) {
+        this.dstToManyRelation = dstToManyRelation;
+    }
 
     @Override
     public String toString() {
@@ -96,8 +115,10 @@ public class ObjectModel {
                 ", parent=" + parent +
                 ", parents=" + parents +
                 ", children=" + children +
-                ", isSrcMultiplicity=" + isSrcMultiplicity +
-                ", isDstMultiplicity=" + isDstMultiplicity +
+                ", srcOneToRelation=" + srcOneToRelation +
+                ", srcManyToRelation=" + srcManyToRelation +
+                ", dstToOneRelation=" + dstToOneRelation +
+                ", dstToManyRelation=" + dstToManyRelation +
                 '}';
     }
 }
