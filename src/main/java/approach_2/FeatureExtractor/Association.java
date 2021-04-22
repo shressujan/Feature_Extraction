@@ -1,4 +1,4 @@
-package approach_2;
+package approach_2.FeatureExtractor;
 
 public class Association {
     private String association;
