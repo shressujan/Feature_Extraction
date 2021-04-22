@@ -1,0 +1,1063 @@
+Computing Satisfying Solutions ...
+Current Time: 2021-04-20 10:40:04.669
+-----------------------------------------
+Solution #1 has been generated.
+Eq.Class #1
+
+TATI(User)= 1
+TATI(Document)= 1
+TATI(Background)= 1
+TATI(Category)= 1
+TATI(Group)= 1
+TATI(Revision)= 1
+Overall_TATI(solution:1)= 6
+
+NCT(User)= 1
+NCT(Document)= 3
+NCT(Background)= 1
+NCT(Category)= 4
+NCT(Group)= 1
+NCT(Revision)= 3
+Overall_NCT(solution:1)= 13
+
+NCRF(User)= 1
+NCRF(Document)= 1
+NCRF(Background)= 1
+NCRF(Category)= 1
+NCRF(Group)= 1
+NCRF(Revision)= 1
+Overall_NCRF(solution:1)= 6
+
+ANV(User)= 0
+ANV(Document)= 0
+ANV(Background)= 0
+ANV(Category)= 0
+ANV(Group)= 0
+ANV(Revision)= 0
+Overall_ANV(solution:1)= 0
+Overall_NIC(solution:1)= 13
+Overall_NFK(solution:1)= 9
+Eq.Classes: 1 / 1
+-----------------------------------------
+-----------------------------------------
+Solution #2 has been generated.
+Eq.Class #1
+-----------------------------------------
+Solution #3 has been generated.
+Eq.Class #2
+
+TATI(User)= 1
+TATI(Document)= 1
+TATI(Background)= 1
+TATI(Category)= 1
+TATI(Group)= 1
+TATI(Revision)= 1
+Overall_TATI(solution:3)= 6
+
+NCT(User)= 1
+NCT(Document)= 3
+NCT(Background)= 1
+NCT(Category)= 4
+NCT(Group)= 1
+NCT(Revision)= 2
+Overall_NCT(solution:3)= 12
+
+NCRF(User)= 1
+NCRF(Document)= 1
+NCRF(Background)= 1
+NCRF(Category)= 1
+NCRF(Group)= 1
+NCRF(Revision)= 1
+Overall_NCRF(solution:3)= 6
+
+ANV(User)= 0
+ANV(Document)= 0
+ANV(Background)= 0
+ANV(Category)= 0
+ANV(Group)= 0
+ANV(Revision)= 0
+Overall_ANV(solution:3)= 0
+Overall_NIC(solution:3)= 12
+Overall_NFK(solution:3)= 10
+Eq.Classes: 2 / 3
+-----------------------------------------
+-----------------------------------------
+Solution #4 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #5 has been generated.
+Eq.Class #3
+
+TATI(User)= 1
+TATI(Document)= 1
+TATI(Background)= 1
+TATI(Category)= 1
+TATI(Group)= 1
+TATI(Revision)= 1
+Overall_TATI(solution:5)= 6
+
+NCT(User)= 1
+NCT(Document)= 2
+NCT(Background)= 1
+NCT(Category)= 3
+NCT(Group)= 1
+NCT(Revision)= 3
+Overall_NCT(solution:5)= 11
+
+NCRF(User)= 1
+NCRF(Document)= 1
+NCRF(Background)= 1
+NCRF(Category)= 1
+NCRF(Group)= 1
+NCRF(Revision)= 1
+Overall_NCRF(solution:5)= 6
+
+ANV(User)= 0
+ANV(Document)= 0
+ANV(Background)= 0
+ANV(Category)= 0
+ANV(Group)= 0
+ANV(Revision)= 0
+Overall_ANV(solution:5)= 0
+Overall_NIC(solution:5)= 11
+Overall_NFK(solution:5)= 11
+Eq.Classes: 3 / 5
+-----------------------------------------
+-----------------------------------------
+Solution #6 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #7 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #8 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #9 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #10 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #11 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #12 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #13 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #14 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #15 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #16 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #17 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #18 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #19 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #20 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #21 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #22 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #23 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #24 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #25 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #26 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #27 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #28 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #29 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #30 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #31 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #32 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #33 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #34 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #35 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #36 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #37 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #38 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #39 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #40 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #41 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #42 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #43 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #44 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #45 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #46 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #47 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #48 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #49 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #50 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #51 has been generated.
+Eq.Class #4
+
+TATI(User)= 1
+TATI(Document)= 1
+TATI(Background)= 1
+TATI(Category)= 1
+TATI(Group)= 1
+TATI(Revision)= 1
+Overall_TATI(solution:51)= 6
+
+NCT(User)= 1
+NCT(Document)= 2
+NCT(Background)= 1
+NCT(Category)= 2
+NCT(Group)= 1
+NCT(Revision)= 2
+Overall_NCT(solution:51)= 9
+
+NCRF(User)= 1
+NCRF(Document)= 1
+NCRF(Background)= 1
+NCRF(Category)= 1
+NCRF(Group)= 1
+NCRF(Revision)= 1
+Overall_NCRF(solution:51)= 6
+
+ANV(User)= 0
+ANV(Document)= 0
+ANV(Background)= 0
+ANV(Category)= 0
+ANV(Group)= 0
+ANV(Revision)= 0
+Overall_ANV(solution:51)= 0
+Overall_NIC(solution:51)= 9
+Overall_NFK(solution:51)= 13
+Eq.Classes: 4 / 51
+-----------------------------------------
+-----------------------------------------
+Solution #52 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #53 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #54 has been generated.
+Eq.Class #5
+
+TATI(User)= 1
+TATI(Document)= 1
+TATI(Background)= 1
+TATI(Category)= 1
+TATI(Group)= 1
+TATI(Revision)= 1
+Overall_TATI(solution:54)= 6
+
+NCT(User)= 1
+NCT(Document)= 1
+NCT(Background)= 1
+NCT(Category)= 3
+NCT(Group)= 1
+NCT(Revision)= 3
+Overall_NCT(solution:54)= 10
+
+NCRF(User)= 1
+NCRF(Document)= 1
+NCRF(Background)= 1
+NCRF(Category)= 1
+NCRF(Group)= 1
+NCRF(Revision)= 1
+Overall_NCRF(solution:54)= 6
+
+ANV(User)= 0
+ANV(Document)= 0
+ANV(Background)= 0
+ANV(Category)= 0
+ANV(Group)= 0
+ANV(Revision)= 0
+Overall_ANV(solution:54)= 0
+Overall_NIC(solution:54)= 10
+Overall_NFK(solution:54)= 12
+Eq.Classes: 5 / 54
+-----------------------------------------
+-----------------------------------------
+Solution #55 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #56 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #57 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #58 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #59 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #60 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #61 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #62 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #63 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #64 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #65 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #66 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #67 has been generated.
+Eq.Class #6
+
+TATI(User)= 1
+TATI(Document)= 1
+TATI(Background)= 1
+TATI(Category)= 1
+TATI(Group)= 1
+TATI(Revision)= 1
+Overall_TATI(solution:67)= 6
+
+NCT(User)= 1
+NCT(Document)= 1
+NCT(Background)= 1
+NCT(Category)= 1
+NCT(Group)= 1
+NCT(Revision)= 3
+Overall_NCT(solution:67)= 8
+
+NCRF(User)= 1
+NCRF(Document)= 1
+NCRF(Background)= 1
+NCRF(Category)= 1
+NCRF(Group)= 1
+NCRF(Revision)= 1
+Overall_NCRF(solution:67)= 6
+
+ANV(User)= 0
+ANV(Document)= 0
+ANV(Background)= 0
+ANV(Category)= 0
+ANV(Group)= 0
+ANV(Revision)= 0
+Overall_ANV(solution:67)= 0
+Overall_NIC(solution:67)= 8
+Overall_NFK(solution:67)= 14
+Eq.Classes: 6 / 67
+-----------------------------------------
+-----------------------------------------
+Solution #68 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #69 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #70 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #71 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #72 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #73 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #74 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #75 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #76 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #77 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #78 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #79 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #80 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #81 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #82 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #83 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #84 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #85 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #86 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #87 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #88 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #89 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #90 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #91 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #92 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #93 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #94 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #95 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #96 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #97 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #98 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #99 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #100 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #101 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #102 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #103 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #104 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #105 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #106 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #107 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #108 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #109 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #110 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #111 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #112 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #113 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #114 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #115 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #116 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #117 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #118 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #119 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #120 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #121 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #122 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #123 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #124 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #125 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #126 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #127 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #128 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #129 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #130 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #131 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #132 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #133 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #134 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #135 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #136 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #137 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #138 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #139 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #140 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #141 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #142 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #143 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #144 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #145 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #146 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #147 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #148 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #149 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #150 has been generated.
+Eq.Class #7
+
+TATI(User)= 1
+TATI(Document)= 1
+TATI(Background)= 1
+TATI(Category)= 1
+TATI(Group)= 1
+TATI(Revision)= 1
+Overall_TATI(solution:150)= 6
+
+NCT(User)= 1
+NCT(Document)= 1
+NCT(Background)= 1
+NCT(Category)= 1
+NCT(Group)= 1
+NCT(Revision)= 2
+Overall_NCT(solution:150)= 7
+
+NCRF(User)= 1
+NCRF(Document)= 1
+NCRF(Background)= 1
+NCRF(Category)= 1
+NCRF(Group)= 1
+NCRF(Revision)= 1
+Overall_NCRF(solution:150)= 6
+
+ANV(User)= 0
+ANV(Document)= 0
+ANV(Background)= 0
+ANV(Category)= 0
+ANV(Group)= 0
+ANV(Revision)= 0
+Overall_ANV(solution:150)= 0
+Overall_NIC(solution:150)= 7
+Overall_NFK(solution:150)= 15
+Eq.Classes: 7 / 150
+-----------------------------------------
+-----------------------------------------
+Solution #151 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #152 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #153 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #154 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #155 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #156 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #157 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #158 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #159 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #160 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #161 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #162 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #163 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #164 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #165 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #166 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #167 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #168 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #169 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #170 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #171 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #172 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #173 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #174 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #175 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #176 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #177 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #178 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #179 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #180 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #181 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #182 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #183 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #184 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #185 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #186 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #187 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #188 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #189 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #190 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #191 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #192 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #193 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #194 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #195 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #196 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #197 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #198 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #199 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #200 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #201 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #202 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #203 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #204 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #205 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #206 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #207 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #208 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #209 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #210 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #211 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #212 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #213 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #214 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #215 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #216 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #217 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #218 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #219 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #220 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #221 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #222 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #223 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #224 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #225 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #226 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #227 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #228 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #229 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #230 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #231 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #232 has been generated.
+Eq.Class #8
+
+TATI(User)= 1
+TATI(Document)= 1
+TATI(Background)= 1
+TATI(Category)= 1
+TATI(Group)= 1
+TATI(Revision)= 1
+Overall_TATI(solution:232)= 6
+
+NCT(User)= 1
+NCT(Document)= 1
+NCT(Background)= 1
+NCT(Category)= 1
+NCT(Group)= 1
+NCT(Revision)= 1
+Overall_NCT(solution:232)= 6
+
+NCRF(User)= 1
+NCRF(Document)= 1
+NCRF(Background)= 1
+NCRF(Category)= 1
+NCRF(Group)= 1
+NCRF(Revision)= 1
+Overall_NCRF(solution:232)= 6
+
+ANV(User)= 0
+ANV(Document)= 0
+ANV(Background)= 0
+ANV(Category)= 0
+ANV(Group)= 0
+ANV(Revision)= 0
+Overall_ANV(solution:232)= 0
+Overall_NIC(solution:232)= 6
+Overall_NFK(solution:232)= 0
+Eq.Classes: 8 / 232
+-----------------------------------------
+-----------------------------------------
+Solution #233 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #234 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #235 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #236 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #237 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #238 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #239 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #240 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #241 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #242 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #243 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #244 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #245 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #246 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #247 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #248 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #249 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #250 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #251 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #252 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #253 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #254 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #255 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #256 has been generated.
+Eq.Class #9
+
+-----------------------------------------
+# Eq.Classes: 8 / 257
+Current Time: 2021-04-20 10:42:03.562
+No more Satisfying solutions

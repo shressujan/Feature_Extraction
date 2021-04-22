@@ -1,0 +1,644 @@
+<alloy builddate="2008/10/27 23:45 EDT">
+
+<instance bitwidth="4" maxseq="7" command="Run mapping_run_flagship for 28" filename="">
+
+<sig label="univ" ID="0" builtin="yes">
+   <atom label="assertions/relationalModel/Table$0"/>
+   <atom label="assertions/relationalModel/Table$1"/>
+   <atom label="assertions/relationalModel/Table$2"/>
+   <atom label="assertions/relationalModel/Table$3"/>
+   <atom label="assertions/relationalModel/Table$4"/>
+   <atom label="assertions/relationalModel/Table$5"/>
+   <atom label="assertions/relationalModel/Table$6"/>
+   <atom label="assertions/relationalModel/Table$7"/>
+   <atom label="assertions/relationalModel/Table$8"/>
+   <atom label="assertions/relationalModel/Table$9"/>
+   <atom label="assertions/relationalModel/Field$0"/>
+   <atom label="assertions/relationalModel/Field$1"/>
+   <atom label="assertions/relationalModel/Field$2"/>
+   <atom label="assertions/relationalModel/Field$3"/>
+   <atom label="assertions/relationalModel/Field$4"/>
+   <atom label="assertions/relationalModel/Field$5"/>
+   <atom label="assertions/relationalModel/Field$6"/>
+   <atom label="assertions/relationalModel/Field$7"/>
+   <atom label="assertions/relationalModel/Field$8"/>
+   <atom label="assertions/relationalModel/Field$9"/>
+   <atom label="assertions/relationalModel/Field$10"/>
+   <atom label="assertions/relationalModel/Field$11"/>
+   <atom label="flagship/User"/>
+   <atom label="flagship/Document"/>
+   <atom label="flagship/Background"/>
+   <atom label="flagship/Category"/>
+   <atom label="flagship/Group"/>
+   <atom label="flagship/Revision"/>
+   <atom label="flagship/userID"/>
+   <atom label="flagship/documentID"/>
+   <atom label="flagship/backgroundID"/>
+   <atom label="flagship/categoryID"/>
+   <atom label="flagship/groupID"/>
+   <atom label="flagship/revisionID"/>
+   <atom label="flagship/userName"/>
+   <atom label="flagship/title"/>
+   <atom label="flagship/backgroundName"/>
+   <atom label="flagship/categoryName"/>
+   <atom label="flagship/groupName"/>
+   <atom label="flagship/revisionName"/>
+   <atom label="flagship/GroupUserAssociation"/>
+   <atom label="flagship/CategoryGroupAssociation"/>
+   <atom label="flagship/CategoryUserAssociation"/>
+   <atom label="flagship/CategoryBackgroundAssociation"/>
+   <atom label="flagship/DocumentCategoryAssociation"/>
+   <atom label="flagship/DocumentUserAssociation"/>
+   <atom label="flagship/RevisionDocumentAssociation"/>
+   <atom label="flagship/RevisionUserAssociation"/>
+   <atom label="AssociationMappings/Declaration/No$0"/>
+   <atom label="AssociationMappings/Declaration/ONE"/>
+   <atom label="AssociationMappings/Declaration/MANY"/>
+   <atom label="ORMStrategies/UnionSubclassStrategy"/>
+   <atom label="ORMStrategies/JoinedSubclassStrategy"/>
+   <atom label="ORMStrategies/UnionSuperclassStrategy"/>
+   <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/>
+   <atom label="AssociationMappings/OwnAssociationTableStrategy"/>
+   <atom label="AssociationMappings/MergingOneTableStrategy"/>
+   <atom label="AssociationMappings/AssociationMappingStrategies"/>
+   <atom label="-8"/>
+   <atom label="-7"/>
+   <atom label="-6"/>
+   <atom label="-5"/>
+   <atom label="-4"/>
+   <atom label="-3"/>
+   <atom label="-2"/>
+   <atom label="-1"/>
+   <atom label="0"/>
+   <atom label="1"/>
+   <atom label="2"/>
+   <atom label="3"/>
+   <atom label="4"/>
+   <atom label="5"/>
+   <atom label="6"/>
+   <atom label="7"/>
+</sig>
+
+<sig label="Int" ID="1" parentID="0" builtin="yes">
+   <atom label="-8"/>
+   <atom label="-7"/>
+   <atom label="-6"/>
+   <atom label="-5"/>
+   <atom label="-4"/>
+   <atom label="-3"/>
+   <atom label="-2"/>
+   <atom label="-1"/>
+   <atom label="0"/>
+   <atom label="1"/>
+   <atom label="2"/>
+   <atom label="3"/>
+   <atom label="4"/>
+   <atom label="5"/>
+   <atom label="6"/>
+   <atom label="7"/>
+</sig>
+
+<sig label="seq/Int" ID="2" parentID="1" builtin="yes">
+   <atom label="0"/>
+   <atom label="1"/>
+   <atom label="2"/>
+   <atom label="3"/>
+   <atom label="4"/>
+   <atom label="5"/>
+   <atom label="6"/>
+</sig>
+
+<sig label="fun/String" ID="3" parentID="0" builtin="yes">
+</sig>
+
+<sig label="assertions/relationalModel/Table" ID="4" parentID="0">
+   <atom label="assertions/relationalModel/Table$0"/>
+   <atom label="assertions/relationalModel/Table$1"/>
+   <atom label="assertions/relationalModel/Table$2"/>
+   <atom label="assertions/relationalModel/Table$3"/>
+   <atom label="assertions/relationalModel/Table$4"/>
+   <atom label="assertions/relationalModel/Table$5"/>
+   <atom label="assertions/relationalModel/Table$6"/>
+   <atom label="assertions/relationalModel/Table$7"/>
+   <atom label="assertions/relationalModel/Table$8"/>
+   <atom label="assertions/relationalModel/Table$9"/>
+</sig>
+
+<field label="fields" ID="5" parentID="4">
+   <tuple> <atom label="assertions/relationalModel/Table$0"/> <atom label="assertions/relationalModel/Field$10"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$0"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="assertions/relationalModel/Field$8"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="assertions/relationalModel/Field$9"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="assertions/relationalModel/Field$7"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$6"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$4"/> <atom label="assertions/relationalModel/Field$5"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$4"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$4"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$8"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$10"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$6"/> <atom label="assertions/relationalModel/Field$3"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$6"/> <atom label="assertions/relationalModel/Field$9"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$2"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$7"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$8"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="assertions/relationalModel/Field$1"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="assertions/relationalModel/Field$7"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="assertions/relationalModel/Field$0"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="assertions/relationalModel/Field$6"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="assertions/relationalModel/Field$10"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<field label="primaryKey" ID="7" parentID="4">
+   <tuple> <atom label="assertions/relationalModel/Table$0"/> <atom label="assertions/relationalModel/Field$10"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$0"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="assertions/relationalModel/Field$8"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="assertions/relationalModel/Field$9"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="assertions/relationalModel/Field$7"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$6"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$4"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$10"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$6"/> <atom label="assertions/relationalModel/Field$9"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$8"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="assertions/relationalModel/Field$7"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="assertions/relationalModel/Field$6"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<field label="foreignKey" ID="8" parentID="4">
+   <tuple> <atom label="assertions/relationalModel/Table$0"/> <atom label="assertions/relationalModel/Field$10"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$0"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="assertions/relationalModel/Field$8"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="assertions/relationalModel/Field$9"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="assertions/relationalModel/Field$7"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$6"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$8"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$7"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="assertions/relationalModel/Field$10"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<field label="tAssociate" ID="9" parentID="4">
+   <tuple> <atom label="assertions/relationalModel/Table$0"/> <atom label="flagship/DocumentUserAssociation"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="flagship/CategoryBackgroundAssociation"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="flagship/GroupUserAssociation"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="flagship/RevisionUserAssociation"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$4"/> <atom label="flagship/User"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="flagship/Document"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$6"/> <atom label="flagship/Background"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="flagship/Category"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="flagship/Group"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="flagship/Revision"/> </tuple>
+   <types> <type ID="4"/> <type ID="10"/> </types>
+   <types> <type ID="4"/> <type ID="11"/> </types>
+</field>
+
+<sig label="assertions/relationalModel/Field" ID="6" parentID="0">
+   <atom label="assertions/relationalModel/Field$0"/>
+   <atom label="assertions/relationalModel/Field$1"/>
+   <atom label="assertions/relationalModel/Field$2"/>
+   <atom label="assertions/relationalModel/Field$3"/>
+   <atom label="assertions/relationalModel/Field$4"/>
+   <atom label="assertions/relationalModel/Field$5"/>
+   <atom label="assertions/relationalModel/Field$6"/>
+   <atom label="assertions/relationalModel/Field$7"/>
+   <atom label="assertions/relationalModel/Field$8"/>
+   <atom label="assertions/relationalModel/Field$9"/>
+   <atom label="assertions/relationalModel/Field$10"/>
+   <atom label="assertions/relationalModel/Field$11"/>
+</sig>
+
+<field label="fAssociate" ID="12" parentID="6">
+   <tuple> <atom label="assertions/relationalModel/Field$0"/> <atom label="flagship/revisionName"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$1"/> <atom label="flagship/groupName"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$2"/> <atom label="flagship/categoryName"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$3"/> <atom label="flagship/backgroundName"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$4"/> <atom label="flagship/title"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$5"/> <atom label="flagship/userName"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$6"/> <atom label="flagship/revisionID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$7"/> <atom label="flagship/groupID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$8"/> <atom label="flagship/categoryID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$9"/> <atom label="flagship/backgroundID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$10"/> <atom label="flagship/documentID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$11"/> <atom label="flagship/userID"/> </tuple>
+   <types> <type ID="6"/> <type ID="13"/> </types>
+</field>
+
+<sig label="AssociationMappings/Declaration/needHandle" ID="13" parentID="0" abstract="yes">
+   <atom label="flagship/User"/>
+   <atom label="flagship/Document"/>
+   <atom label="flagship/Background"/>
+   <atom label="flagship/Category"/>
+   <atom label="flagship/Group"/>
+   <atom label="flagship/Revision"/>
+   <atom label="flagship/userID"/>
+   <atom label="flagship/documentID"/>
+   <atom label="flagship/backgroundID"/>
+   <atom label="flagship/categoryID"/>
+   <atom label="flagship/groupID"/>
+   <atom label="flagship/revisionID"/>
+   <atom label="flagship/userName"/>
+   <atom label="flagship/title"/>
+   <atom label="flagship/backgroundName"/>
+   <atom label="flagship/categoryName"/>
+   <atom label="flagship/groupName"/>
+   <atom label="flagship/revisionName"/>
+   <atom label="flagship/GroupUserAssociation"/>
+   <atom label="flagship/CategoryGroupAssociation"/>
+   <atom label="flagship/CategoryUserAssociation"/>
+   <atom label="flagship/CategoryBackgroundAssociation"/>
+   <atom label="flagship/DocumentCategoryAssociation"/>
+   <atom label="flagship/DocumentUserAssociation"/>
+   <atom label="flagship/RevisionDocumentAssociation"/>
+   <atom label="flagship/RevisionUserAssociation"/>
+   <atom label="AssociationMappings/Declaration/No$0"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Attribute" ID="14" parentID="13" abstract="yes">
+   <atom label="flagship/User"/>
+   <atom label="flagship/Document"/>
+   <atom label="flagship/Background"/>
+   <atom label="flagship/Category"/>
+   <atom label="flagship/Group"/>
+   <atom label="flagship/Revision"/>
+   <atom label="flagship/userID"/>
+   <atom label="flagship/documentID"/>
+   <atom label="flagship/backgroundID"/>
+   <atom label="flagship/categoryID"/>
+   <atom label="flagship/groupID"/>
+   <atom label="flagship/revisionID"/>
+   <atom label="flagship/userName"/>
+   <atom label="flagship/title"/>
+   <atom label="flagship/backgroundName"/>
+   <atom label="flagship/categoryName"/>
+   <atom label="flagship/groupName"/>
+   <atom label="flagship/revisionName"/>
+   <atom label="AssociationMappings/Declaration/No$0"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Class" ID="10" parentID="14" abstract="yes">
+   <atom label="flagship/User"/>
+   <atom label="flagship/Document"/>
+   <atom label="flagship/Background"/>
+   <atom label="flagship/Category"/>
+   <atom label="flagship/Group"/>
+   <atom label="flagship/Revision"/>
+</sig>
+
+<field label="attrSet" ID="15" parentID="10">
+   <tuple> <atom label="flagship/User"/> <atom label="flagship/userID"/> </tuple>
+   <tuple> <atom label="flagship/User"/> <atom label="flagship/userName"/> </tuple>
+   <tuple> <atom label="flagship/Document"/> <atom label="flagship/documentID"/> </tuple>
+   <tuple> <atom label="flagship/Document"/> <atom label="flagship/title"/> </tuple>
+   <tuple> <atom label="flagship/Background"/> <atom label="flagship/backgroundID"/> </tuple>
+   <tuple> <atom label="flagship/Background"/> <atom label="flagship/backgroundName"/> </tuple>
+   <tuple> <atom label="flagship/Category"/> <atom label="flagship/categoryID"/> </tuple>
+   <tuple> <atom label="flagship/Category"/> <atom label="flagship/categoryName"/> </tuple>
+   <tuple> <atom label="flagship/Group"/> <atom label="flagship/groupID"/> </tuple>
+   <tuple> <atom label="flagship/Group"/> <atom label="flagship/groupName"/> </tuple>
+   <tuple> <atom label="flagship/Revision"/> <atom label="flagship/revisionID"/> </tuple>
+   <tuple> <atom label="flagship/Revision"/> <atom label="flagship/revisionName"/> </tuple>
+   <types> <type ID="10"/> <type ID="14"/> </types>
+</field>
+
+<field label="id" ID="16" parentID="10">
+   <tuple> <atom label="flagship/User"/> <atom label="flagship/userID"/> </tuple>
+   <tuple> <atom label="flagship/Document"/> <atom label="flagship/documentID"/> </tuple>
+   <tuple> <atom label="flagship/Background"/> <atom label="flagship/backgroundID"/> </tuple>
+   <tuple> <atom label="flagship/Category"/> <atom label="flagship/categoryID"/> </tuple>
+   <tuple> <atom label="flagship/Group"/> <atom label="flagship/groupID"/> </tuple>
+   <tuple> <atom label="flagship/Revision"/> <atom label="flagship/revisionID"/> </tuple>
+   <types> <type ID="10"/> <type ID="14"/> </types>
+</field>
+
+<field label="parent" ID="17" parentID="10">
+   <types> <type ID="10"/> <type ID="10"/> </types>
+</field>
+
+<field label="isAbstract" ID="18" parentID="10">
+   <tuple> <atom label="flagship/User"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="flagship/Document"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="flagship/Background"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="flagship/Category"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="flagship/Group"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="flagship/Revision"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <types> <type ID="10"/> <type ID="19"/> </types>
+</field>
+
+<sig label="flagship/User" ID="20" parentID="10" one="yes">
+   <atom label="flagship/User"/>
+</sig>
+
+<sig label="flagship/Document" ID="21" parentID="10" one="yes">
+   <atom label="flagship/Document"/>
+</sig>
+
+<sig label="flagship/Background" ID="22" parentID="10" one="yes">
+   <atom label="flagship/Background"/>
+</sig>
+
+<sig label="flagship/Category" ID="23" parentID="10" one="yes">
+   <atom label="flagship/Category"/>
+</sig>
+
+<sig label="flagship/Group" ID="24" parentID="10" one="yes">
+   <atom label="flagship/Group"/>
+</sig>
+
+<sig label="flagship/Revision" ID="25" parentID="10" one="yes">
+   <atom label="flagship/Revision"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Type" ID="26" parentID="14" abstract="yes">
+   <atom label="flagship/userID"/>
+   <atom label="flagship/documentID"/>
+   <atom label="flagship/backgroundID"/>
+   <atom label="flagship/categoryID"/>
+   <atom label="flagship/groupID"/>
+   <atom label="flagship/revisionID"/>
+   <atom label="flagship/userName"/>
+   <atom label="flagship/title"/>
+   <atom label="flagship/backgroundName"/>
+   <atom label="flagship/categoryName"/>
+   <atom label="flagship/groupName"/>
+   <atom label="flagship/revisionName"/>
+   <atom label="AssociationMappings/Declaration/No$0"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Integer" ID="27" parentID="26">
+   <atom label="flagship/userID"/>
+   <atom label="flagship/documentID"/>
+   <atom label="flagship/backgroundID"/>
+   <atom label="flagship/categoryID"/>
+   <atom label="flagship/groupID"/>
+   <atom label="flagship/revisionID"/>
+</sig>
+
+<sig label="flagship/userID" ID="28" parentID="27" one="yes">
+   <atom label="flagship/userID"/>
+</sig>
+
+<sig label="flagship/documentID" ID="29" parentID="27" one="yes">
+   <atom label="flagship/documentID"/>
+</sig>
+
+<sig label="flagship/backgroundID" ID="30" parentID="27" one="yes">
+   <atom label="flagship/backgroundID"/>
+</sig>
+
+<sig label="flagship/categoryID" ID="31" parentID="27" one="yes">
+   <atom label="flagship/categoryID"/>
+</sig>
+
+<sig label="flagship/groupID" ID="32" parentID="27" one="yes">
+   <atom label="flagship/groupID"/>
+</sig>
+
+<sig label="flagship/revisionID" ID="33" parentID="27" one="yes">
+   <atom label="flagship/revisionID"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Real" ID="34" parentID="26">
+</sig>
+
+<sig label="AssociationMappings/Declaration/string" ID="35" parentID="26">
+   <atom label="flagship/userName"/>
+   <atom label="flagship/title"/>
+   <atom label="flagship/backgroundName"/>
+   <atom label="flagship/categoryName"/>
+   <atom label="flagship/groupName"/>
+   <atom label="flagship/revisionName"/>
+</sig>
+
+<sig label="flagship/userName" ID="36" parentID="35" one="yes">
+   <atom label="flagship/userName"/>
+</sig>
+
+<sig label="flagship/title" ID="37" parentID="35" one="yes">
+   <atom label="flagship/title"/>
+</sig>
+
+<sig label="flagship/backgroundName" ID="38" parentID="35" one="yes">
+   <atom label="flagship/backgroundName"/>
+</sig>
+
+<sig label="flagship/categoryName" ID="39" parentID="35" one="yes">
+   <atom label="flagship/categoryName"/>
+</sig>
+
+<sig label="flagship/groupName" ID="40" parentID="35" one="yes">
+   <atom label="flagship/groupName"/>
+</sig>
+
+<sig label="flagship/revisionName" ID="41" parentID="35" one="yes">
+   <atom label="flagship/revisionName"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Bool" ID="19" parentID="26">
+   <atom label="AssociationMappings/Declaration/No$0"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Yes" ID="42" parentID="19">
+</sig>
+
+<sig label="AssociationMappings/Declaration/No" ID="43" parentID="19">
+   <atom label="AssociationMappings/Declaration/No$0"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/DType" ID="44" parentID="26">
+</sig>
+
+<sig label="AssociationMappings/Declaration/Longblob" ID="45" parentID="26">
+</sig>
+
+<sig label="AssociationMappings/Declaration/Time" ID="46" parentID="26">
+</sig>
+
+<sig label="AssociationMappings/Declaration/Association" ID="11" parentID="13" abstract="yes">
+   <atom label="flagship/GroupUserAssociation"/>
+   <atom label="flagship/CategoryGroupAssociation"/>
+   <atom label="flagship/CategoryUserAssociation"/>
+   <atom label="flagship/CategoryBackgroundAssociation"/>
+   <atom label="flagship/DocumentCategoryAssociation"/>
+   <atom label="flagship/DocumentUserAssociation"/>
+   <atom label="flagship/RevisionDocumentAssociation"/>
+   <atom label="flagship/RevisionUserAssociation"/>
+</sig>
+
+<field label="src" ID="47" parentID="11">
+   <tuple> <atom label="flagship/GroupUserAssociation"/> <atom label="flagship/Group"/> </tuple>
+   <tuple> <atom label="flagship/CategoryGroupAssociation"/> <atom label="flagship/Group"/> </tuple>
+   <tuple> <atom label="flagship/CategoryUserAssociation"/> <atom label="flagship/User"/> </tuple>
+   <tuple> <atom label="flagship/CategoryBackgroundAssociation"/> <atom label="flagship/Background"/> </tuple>
+   <tuple> <atom label="flagship/DocumentCategoryAssociation"/> <atom label="flagship/Category"/> </tuple>
+   <tuple> <atom label="flagship/DocumentUserAssociation"/> <atom label="flagship/User"/> </tuple>
+   <tuple> <atom label="flagship/RevisionDocumentAssociation"/> <atom label="flagship/Document"/> </tuple>
+   <tuple> <atom label="flagship/RevisionUserAssociation"/> <atom label="flagship/User"/> </tuple>
+   <types> <type ID="11"/> <type ID="10"/> </types>
+</field>
+
+<field label="dst" ID="48" parentID="11">
+   <tuple> <atom label="flagship/GroupUserAssociation"/> <atom label="flagship/User"/> </tuple>
+   <tuple> <atom label="flagship/CategoryGroupAssociation"/> <atom label="flagship/Category"/> </tuple>
+   <tuple> <atom label="flagship/CategoryUserAssociation"/> <atom label="flagship/Category"/> </tuple>
+   <tuple> <atom label="flagship/CategoryBackgroundAssociation"/> <atom label="flagship/Category"/> </tuple>
+   <tuple> <atom label="flagship/DocumentCategoryAssociation"/> <atom label="flagship/Document"/> </tuple>
+   <tuple> <atom label="flagship/DocumentUserAssociation"/> <atom label="flagship/Document"/> </tuple>
+   <tuple> <atom label="flagship/RevisionDocumentAssociation"/> <atom label="flagship/Revision"/> </tuple>
+   <tuple> <atom label="flagship/RevisionUserAssociation"/> <atom label="flagship/Revision"/> </tuple>
+   <types> <type ID="11"/> <type ID="10"/> </types>
+</field>
+
+<field label="src_multiplicity" ID="49" parentID="11">
+   <tuple> <atom label="flagship/GroupUserAssociation"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="flagship/CategoryGroupAssociation"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <tuple> <atom label="flagship/CategoryUserAssociation"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <tuple> <atom label="flagship/CategoryBackgroundAssociation"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <tuple> <atom label="flagship/DocumentCategoryAssociation"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <tuple> <atom label="flagship/DocumentUserAssociation"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <tuple> <atom label="flagship/RevisionDocumentAssociation"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <tuple> <atom label="flagship/RevisionUserAssociation"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <types> <type ID="11"/> <type ID="50"/> </types>
+</field>
+
+<field label="dst_multiplicity" ID="51" parentID="11">
+   <tuple> <atom label="flagship/GroupUserAssociation"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="flagship/CategoryGroupAssociation"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="flagship/CategoryUserAssociation"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="flagship/CategoryBackgroundAssociation"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="flagship/DocumentCategoryAssociation"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="flagship/DocumentUserAssociation"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="flagship/RevisionDocumentAssociation"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="flagship/RevisionUserAssociation"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <types> <type ID="11"/> <type ID="50"/> </types>
+</field>
+
+<sig label="flagship/GroupUserAssociation" ID="52" parentID="11" one="yes">
+   <atom label="flagship/GroupUserAssociation"/>
+</sig>
+
+<sig label="flagship/CategoryGroupAssociation" ID="53" parentID="11" one="yes">
+   <atom label="flagship/CategoryGroupAssociation"/>
+</sig>
+
+<sig label="flagship/CategoryUserAssociation" ID="54" parentID="11" one="yes">
+   <atom label="flagship/CategoryUserAssociation"/>
+</sig>
+
+<sig label="flagship/CategoryBackgroundAssociation" ID="55" parentID="11" one="yes">
+   <atom label="flagship/CategoryBackgroundAssociation"/>
+</sig>
+
+<sig label="flagship/DocumentCategoryAssociation" ID="56" parentID="11" one="yes">
+   <atom label="flagship/DocumentCategoryAssociation"/>
+</sig>
+
+<sig label="flagship/DocumentUserAssociation" ID="57" parentID="11" one="yes">
+   <atom label="flagship/DocumentUserAssociation"/>
+</sig>
+
+<sig label="flagship/RevisionDocumentAssociation" ID="58" parentID="11" one="yes">
+   <atom label="flagship/RevisionDocumentAssociation"/>
+</sig>
+
+<sig label="flagship/RevisionUserAssociation" ID="59" parentID="11" one="yes">
+   <atom label="flagship/RevisionUserAssociation"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Multiplicity_State" ID="50" parentID="0" abstract="yes">
+   <atom label="AssociationMappings/Declaration/ONE"/>
+   <atom label="AssociationMappings/Declaration/MANY"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/ONE" ID="60" parentID="50" one="yes">
+   <atom label="AssociationMappings/Declaration/ONE"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/MANY" ID="61" parentID="50" one="yes">
+   <atom label="AssociationMappings/Declaration/MANY"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Strategy" ID="62" parentID="0" abstract="yes">
+   <atom label="ORMStrategies/UnionSubclassStrategy"/>
+   <atom label="ORMStrategies/JoinedSubclassStrategy"/>
+   <atom label="ORMStrategies/UnionSuperclassStrategy"/>
+   <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/>
+   <atom label="AssociationMappings/OwnAssociationTableStrategy"/>
+   <atom label="AssociationMappings/MergingOneTableStrategy"/>
+</sig>
+
+<field label="assignees" ID="63" parentID="62">
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="flagship/User"/> </tuple>
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="flagship/Background"/> </tuple>
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="flagship/Group"/> </tuple>
+   <tuple> <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/> <atom label="flagship/CategoryGroupAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/> <atom label="flagship/CategoryUserAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/> <atom label="flagship/DocumentCategoryAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/> <atom label="flagship/RevisionDocumentAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/OwnAssociationTableStrategy"/> <atom label="flagship/GroupUserAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/OwnAssociationTableStrategy"/> <atom label="flagship/CategoryBackgroundAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/OwnAssociationTableStrategy"/> <atom label="flagship/DocumentUserAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/OwnAssociationTableStrategy"/> <atom label="flagship/RevisionUserAssociation"/> </tuple>
+   <types> <type ID="62"/> <type ID="10"/> </types>
+   <types> <type ID="62"/> <type ID="11"/> </types>
+</field>
+
+<sig label="ORMStrategies/UnionSubclassStrategy" ID="64" parentID="62" one="yes">
+   <atom label="ORMStrategies/UnionSubclassStrategy"/>
+</sig>
+
+<sig label="ORMStrategies/JoinedSubclassStrategy" ID="65" parentID="62" one="yes">
+   <atom label="ORMStrategies/JoinedSubclassStrategy"/>
+</sig>
+
+<sig label="ORMStrategies/UnionSuperclassStrategy" ID="66" parentID="62" one="yes">
+   <atom label="ORMStrategies/UnionSuperclassStrategy"/>
+</sig>
+
+<sig label="AssociationMappings/ForeignKeyEmbeddingStrategy" ID="67" parentID="62" one="yes">
+   <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/>
+</sig>
+
+<sig label="AssociationMappings/OwnAssociationTableStrategy" ID="68" parentID="62" one="yes">
+   <atom label="AssociationMappings/OwnAssociationTableStrategy"/>
+</sig>
+
+<sig label="AssociationMappings/MergingOneTableStrategy" ID="69" parentID="62" one="yes">
+   <atom label="AssociationMappings/MergingOneTableStrategy"/>
+</sig>
+
+<sig label="AssociationMappings/AssociationMappingStrategies" ID="70" parentID="0" one="yes">
+   <atom label="AssociationMappings/AssociationMappingStrategies"/>
+</sig>
+
+<field label="FKE" ID="71" parentID="70">
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="flagship/CategoryGroupAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="flagship/CategoryUserAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="flagship/DocumentCategoryAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="flagship/RevisionDocumentAssociation"/> </tuple>
+   <types> <type ID="70"/> <type ID="11"/> </types>
+</field>
+
+<field label="OAT" ID="72" parentID="70">
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="flagship/GroupUserAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="flagship/CategoryBackgroundAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="flagship/DocumentUserAssociation"/> </tuple>
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="flagship/RevisionUserAssociation"/> </tuple>
+   <types> <type ID="70"/> <type ID="11"/> </types>
+</field>
+
+<field label="MOT" ID="73" parentID="70">
+   <types> <type ID="70"/> <type ID="11"/> </types>
+</field>
+
+</instance>
+
+</alloy>
