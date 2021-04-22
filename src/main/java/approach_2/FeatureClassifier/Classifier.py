@@ -10,7 +10,14 @@ from sklearn.pipeline import Pipeline
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import LinearSVC
-from sklearn.metrics import confusion_matrix
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, roc_auc_score, precision_score, recall_score, f1_score, accuracy_score, \
+    classification_report
+from sklearn.utils import resample
+from sklearn.ensemble import RandomForestClassifier
+
+from imblearn.over_sampling import SMOTE
+import warnings
 
 pd.options.display.max_columns = None
 pd.set_option('expand_frame_repr', False)
@@ -23,13 +30,50 @@ def read_csv_file(file):
     print('\n#Reading input csv file:', file, '....: Completed')
 
     local_df = pd.read_csv(file)
-    print('\n# Num of rows', local_df.shape[0])
-    print('# Num of columns', local_df.shape[1])
+    print('\n#Before resampling')
+    print(local_df.paretoOptimal.value_counts())
+
+    local_df = upsample_dataset(local_df)
+
+    print(local_df.paretoOptimal.value_counts())
 
     local_df = local_df.sample(frac=1)
-
     local_df.reset_index(drop=True, inplace=True)
     display(local_df)
+
+    return local_df
+
+
+def upsample_SMOTE_dataset(x_train, y_train):
+    sm = SMOTE(random_state=2)
+    return sm.fit_resample(x_train, y_train.ravel())
+
+
+def upsample_dataset(local_df):
+    df_majority = local_df[local_df.paretoOptimal == 0]
+    df_minority = local_df[local_df.paretoOptimal == 1]
+
+    # Upsampled minority class
+    df_minority_upsampled = resample(df_minority,
+                                     replace=True,
+                                     n_samples=26804,
+                                     random_state=28)
+
+    local_df = pd.concat([df_majority, df_minority_upsampled])
+
+    return local_df
+
+
+def downsample_dataset(local_df):
+    df_majority = local_df[local_df.paretoOptimal == 0]
+    df_minority = local_df[local_df.paretoOptimal == 1]
+
+    # Downsampled majority class
+    df_majority_downsampled = resample(df_majority,
+                                       replace=True,
+                                       n_samples=33,
+                                       random_state=28)
+    local_df = pd.concat([df_majority_downsampled, df_minority])
 
     return local_df
 
@@ -50,12 +94,21 @@ def get_class_distribution(class_):
 
 def feature_label_encoding(local_df):
     print('\n# Encoding text labels in the DataFrame with numerical values....: Completed')
-    numerical_vectors = {'association': {'none': 0, 'OwnAssociationTableStrategy': 1, 'ForeignKeyEmbeddingStrategy': 2},
-                         'mappingStrategy': {'UnionSubclassStrategy': 0, 'UnionSuperclassStrategy': 1,
-                                             'JoinedSubclassStrategy': 2}
-                         }
+
+    # Get all the unique associations in the DataFrame
+    associations = local_df.associations.unique()
+    asc_numeric_dict = dict((asc, index) for index, asc in enumerate(associations))
+    # print(asc_numeric_dict)
+
+    numerical_vectors = {
+        'associations': asc_numeric_dict,
+        'mappingStrategy': {'UnionSubclassStrategy': 0, 'UnionSuperclassStrategy': 1,
+                            'JoinedSubclassStrategy': 2},
+        'parentMappingStrategy': {'none': 0, 'UnionSubclassStrategy': 1, 'UnionSuperclassStrategy': 2,
+                                  'JoinedSubclassStrategy': 3}
+    }
     local_df = local_df.replace(numerical_vectors)
-    # print(local_df.dtypes)
+    # print(local_df)
     return local_df
 
 
@@ -68,17 +121,18 @@ def find_correlation_with_mapStrategy(local_df):
 
 def get_input_output_features(local_df):
     print('\n# Getting Input and output features for given DataFrame....: Completed')
-    input_feature = local_df.drop(['object', 'hasId', 'isSrcMultiplicity', 'paretoOptimal'], axis=1)
+    input_feature = local_df.drop(['object', 'hasId', 'srcOneToRelation', 'dstToOneRelation', 'paretoOptimal'], axis=1)
     output_feature = local_df['paretoOptimal']
 
     return input_feature, output_feature
 
 
-def standardize_data(train_feature):
-    print('# Standardizing the Training feature sets....: Completed')
+def standardize_data(train_feature, test_feature):
+    print('# Standardizing the Training and Testing feature sets....: Completed')
     scaler = StandardScaler()
-    Xs = scaler.fit_transform(train_feature)
-    return Xs
+    train_x = scaler.fit_transform(train_feature)
+    test_x = scaler.fit_transform(test_feature)
+    return train_x, test_x
 
 
 def helper_function(y_true, y_pred):
@@ -128,70 +182,188 @@ def receiver_op_curve(y_true, y_pareto_optimal_probability_scores):
     return FPR, TPR, threshold
 
 
+# Knn Classifier with GridSearchCV to allow k-fold cross validation during model training.
+# Use 5 fold cross validation strategy
+# Scoring function used is 'f1'
+# n_jobs = -1 means use all the available processors in parallel
+# Hyper parameter are n_neighbors, weights (type of distance), p
 def k_nearest_neighbors_classifier():
+    warnings.filterwarnings('ignore')
+    x_train, x_test = standardize_data(X_train, X_test)
+
     print('\n##   Running KNeighborClassifier   ##')
-    k_range = list(range(1, 5))
+    k_range = list(range(1, 30))
     print('# Range of Neighbors:', k_range)
-    param_grid = {'n_neighbors': k_range, 'weights': ('uniform', 'distance')}
+    param_grid = {'n_neighbors': k_range, 'weights': ('uniform', 'distance'), 'p': [1, 2, 5, 10, 20, 30, 50, 100]}
+
     knn = KNeighborsClassifier()
 
     # test
     # scores = cross_val_score(knn, X_train, y_train, cv=10, scoring='accuracy')
     # print(scores.mean())
 
-    knn_cv = GridSearchCV(knn, param_grid, cv=5, scoring='accuracy')
-    knn_cv.fit(X_train, y_train)
-    y_test_pred = knn_cv.predict(X_test)
-    y_test_pred_prob = knn_cv.predict_proba(X_test)
-    cnf_matrix = confusion_matrix(y_test, y_test_pred)
+    knn_cv = GridSearchCV(knn, param_grid, cv=5, scoring='f1', n_jobs=-1)
+    knn_cv.fit(x_train, y_train)
+    optimal_params = knn_cv.best_params_
 
-    FPR, TPR, threshold = receiver_op_curve(y_test, y_test_pred_prob[:, 1])
-
-    print('Best param:', knn_cv.best_params_)
+    print('Best param:', optimal_params)
     print('Best score:', knn_cv.best_score_)
-    print('Test score:', knn_cv.score(X_test, y_test))
+
+    # Training KNN with best parameters
+    knn_clf = KNeighborsClassifier(**optimal_params)
+    knn_clf.fit(x_train, y_train)
+    y_test_pred = knn_clf.predict(x_test)
+    y_test_pred_prob = knn_clf.predict_proba(x_test)
+
+    print('Accuracy score:', accuracy_score(y_test, y_test_pred))
+    print('ROC_AUC score:', roc_auc_score(y_test, y_test_pred_prob[:, 1]))
     print('Confusion matrix:')
-    print(cnf_matrix)
-    print(FPR, TPR, threshold)
+    print('[[TN   FP]')
+    print(' [FN   TP]]')
+    print(confusion_matrix(y_test, y_test_pred))
+
+    print('\nClassification Report')
+    print(classification_report(y_test, y_test_pred))
 
 
+# Multinomial naive bayes classifier with GridSearchCV for K fold cross validation during model training.
+# No hyper-parameters
+# Smoothing function clf__alpha, Scoring function used 'f1'
 def multinomial_naive_bayes_classifier():
+    warnings.filterwarnings('ignore')
+
     print('\n##   Running MultinomialNB Classifier   ##')
-    mnb = Pipeline([('clf', MultinomialNB())])
+    mnb = MultinomialNB()
     param_grid = {
-        'clf__alpha': [0.001, 0.1, 1.0, 1.5, 2.0],
+        'alpha': [0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1, 1.0, 1.5, 2.0]
     }
 
-    mnb_cv = GridSearchCV(mnb, param_grid, scoring='accuracy', cv=5, verbose=1)
+    mnb_cv = GridSearchCV(mnb, param_grid, scoring='f1', cv=5, verbose=3, n_jobs=-1)
     mnb_cv.fit(X_train, y_train)
-    y_test_pred = mnb_cv.predict(X_test)
-    y_test_pred_prob = mnb_cv.predict_proba(X_test)
+    optimal_params = mnb_cv.best_params_
 
-    FPR, TPR, threshold = receiver_op_curve(y_test.to_numpy(), y_test_pred_prob[:, 1])
-
-    print('Best param:', mnb_cv.best_params_)
+    print('Best param:', optimal_params)
     print('Best score:', mnb_cv.best_score_)
-    print('Test score:', mnb_cv.score(X_test, y_test))
+
+    # Training MultinomialNB with optimal parameters
+    mnb_clf = MultinomialNB(**optimal_params)
+    mnb_clf.fit(X_train, y_train)
+    y_test_pred = mnb_clf.predict(X_test)
+    y_test_pred_prob = mnb_clf.predict_proba(X_test)
+
+    print('Accuracy score:', accuracy_score(y_test, y_test_pred))
+    print('ROC_AUC score:', roc_auc_score(y_test, y_test_pred_prob[:, 1]))
     print('Confusion matrix:')
+    print('[[TN   FP]')
+    print(' [FN   TP]]')
     print(confusion_matrix(y_test, y_test_pred))
 
-    for i in range(len(FPR)):
-        print(FPR[i], TPR[i], threshold[i])
+    print('\nClassification Report')
+    print(classification_report(y_test, y_test_pred))
 
 
+# Linear support vector classifier with GridSearchCV for k fold validation during model training
+# Hyper-parameter is the regularization parameter 'C'
+# Scoring function is f1, cv= 5 folds
 def linear_support_vector_classifier():
+    warnings.filterwarnings('ignore')
+    x_train, x_test = standardize_data(X_train, X_test)
+
     print('\n##   Running LinearSV Classifier   ##')
     param_grid = {'C': [1000, 500, 100, 10, 1]}
-    svc = LinearSVC()
-    svc_cv = GridSearchCV(svc, param_grid, scoring='accuracy', cv=5, verbose=3)
-    svc_cv.fit(X_train, y_train)
-    y_test_pred = svc_cv.predict(X_test)
+    lsv = LinearSVC()
+    lsv_cv = GridSearchCV(lsv, param_grid, scoring='f1', cv=5, verbose=1, n_jobs=-1)
+    lsv_cv.fit(x_train, y_train)
+    optimal_params = lsv_cv.best_params_
+    print('Best param:', optimal_params)
+    print('Best score:', lsv_cv.best_score_)
 
-    print('Best param:', svc_cv.best_params_)
-    print('Best score:', svc_cv.best_score_)
-    print('Test score:', svc_cv.score(X_test, y_test))
+    # Training LinearSVC with optimal parameters
+    lsv_clf = LinearSVC(**optimal_params)
+    lsv_clf.fit(x_train, y_train)
+    y_test_pred = lsv_clf.predict(x_test)
+
+    print('Accuracy score:', accuracy_score(y_test, y_test_pred))
     print('Confusion matrix:')
+    print('[[TN   FP]')
+    print(' [FN   TP]]')
     print(confusion_matrix(y_test, y_test_pred))
+
+    print('\nClassification Report')
+    print(classification_report(y_test, y_test_pred))
+
+
+# Logistic Regression classifier with GridSearchCV for k fold cross validation during model training
+# Hyper-parameters solver, tol, max_iter, C
+# scoring function f1, 5 fold cross validation
+def logistic_regression_classifier():
+    warnings.filterwarnings('ignore')
+    x_train, x_test = standardize_data(X_train, X_test)
+
+    print('\n## Running Logistic Regression Classifier  ##')
+    param_grid = {'solver': ['liblinear', 'newton-cg', 'lbfgs'],
+                  'tol': [1e-3, 1e-4], 'max_iter': [100, 500, 1000],
+                  'C': [0.1, 0.5, 1, 1.5, 2, 50, 100]}
+
+    lgr = LogisticRegression()
+    lgr_cv = GridSearchCV(lgr, param_grid, scoring='f1', cv=5, verbose=1, n_jobs=-1)
+    lgr_cv.fit(x_train, y_train)
+    optimal_params = lgr_cv.best_params_
+
+    print('Best param:', optimal_params)
+    print('Best score:', lgr_cv.best_score_)
+
+    # Training LogisticRegression classifier with optimal parameters
+    lgr_clf = LogisticRegression(**optimal_params)
+    lgr_clf.fit(x_train, y_train)
+    y_test_pred = lgr_clf.predict(x_test)
+    y_test_pred_prob = lgr_clf.predict_proba(x_test)
+
+    print('Accuracy score:', accuracy_score(y_test, y_test_pred))
+    print('ROC_AUC score:', roc_auc_score(y_test, y_test_pred_prob[:, 1]))
+    print('Confusion matrix:')
+    print('[[TN   FP]')
+    print(' [FN   TP]]')
+    print(confusion_matrix(y_test, y_test_pred))
+
+    print('\nClassification Report')
+    print(classification_report(y_test, y_test_pred))
+
+
+# RandomForestClassifier with GridSearchCV for k fold cross validation during model training.
+# Hyper-parameters are n_estimators, max_features, max_depth
+# Scoring function f1, 5 fold cross validation
+def random_forest_classifier():
+    warnings.filterwarnings('ignore')
+    x_train, x_test = standardize_data(X_train, X_test)
+
+    print('\n##   Running Random Forest Classifier   ##')
+    param_grid = {'n_estimators': [500, 1000],
+                  'max_features': ['auto', 'sqrt', 'log2'],
+                  'max_depth': [4, 5, 6]}
+    rfc = RandomForestClassifier(random_state=42)
+    rfc_cv = GridSearchCV(rfc, param_grid, cv=5, verbose=1, n_jobs=-1)
+    rfc_cv.fit(x_train, y_train)
+    optimal_params = rfc_cv.best_params_
+
+    print('Best param:', optimal_params)
+    print('Best score:', rfc_cv.best_score_)
+
+    # Training RandomForestClassifier with optimal parameters
+    rfc_clf = RandomForestClassifier(**optimal_params)
+    rfc_clf.fit(x_train, y_train)
+    y_test_pred = rfc_clf.predict(x_test)
+    y_test_pred_prob = rfc_clf.predict_proba(x_test)
+
+    print('Accuracy score:', accuracy_score(y_test, y_test_pred))
+    print('ROC_AUC score:', roc_auc_score(y_test, y_test_pred_prob[:, 1]))
+    print('Confusion matrix:')
+    print('[[TN   FP]')
+    print(' [FN   TP]]')
+    print(confusion_matrix(y_test, y_test_pred))
+
+    print('\nClassification Report')
+    print(classification_report(y_test, y_test_pred))
 
 
 if __name__ == '__main__':
@@ -201,24 +373,29 @@ if __name__ == '__main__':
     # Gets all the distribution by input class_ parameter
     get_class_distribution('paretoOptimal')
     get_class_distribution('mappingStrategy')
-    get_class_distribution('association')
+    get_class_distribution('associations')
 
     df = feature_label_encoding(df)
     find_correlation_with_mapStrategy(df)
     X, y = get_input_output_features(df)
 
     # Split the data in training and testing dataset
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=28)
     print('\nX_train shape:', X_train.shape)
 
-    # X_train = standardize_data(X_train)
-    # X_test = standardize_data(X_test)
+    # X_train, y_train = upsample_SMOTE_dataset(X_train, y_train)
 
     # Calling KNearestNeighborClassifier
-    # k_nearest_neighbors_classifier()
+    k_nearest_neighbors_classifier()
 
     # Calling Multinomial Naive Bayes Classifier
-    multinomial_naive_bayes_classifier()
+    # multinomial_naive_bayes_classifier()
 
     # Calling Linear Support Vector Classifier
     # linear_support_vector_classifier()
+
+    # Calling Logistic Regression Classifier
+    # logistic_regression_classifier()
+
+    # Calling Random Forest Classifier
+    # random_forest_classifier()
