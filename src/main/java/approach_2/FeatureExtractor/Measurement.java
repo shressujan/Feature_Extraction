@@ -1,4 +1,4 @@
-package approach_2;
+package approach_2.FeatureExtractor;
 
 import java.util.Comparator;
 
@@ -84,7 +84,7 @@ public class Measurement {
 
     @Override
     public String toString() {
-        return "approach_2.Measurement{" +
+        return "Measurement{" +
                 "solutionName='" + solutionName + '\'' +
                 ", insertTime=" + insertTime +
                 ", selectTime=" + selectTime +

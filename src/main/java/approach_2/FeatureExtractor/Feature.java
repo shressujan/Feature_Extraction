@@ -1,4 +1,4 @@
-package approach_2;
+package approach_2.FeatureExtractor;
 
 import java.util.List;
 
