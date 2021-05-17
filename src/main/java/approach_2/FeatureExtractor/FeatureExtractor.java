@@ -37,26 +37,15 @@ public class FeatureExtractor {
 
     public static void main(String[] args) {
         String alloyFileDirectory = null;
-        String solutionDirectory;
-        String solutionTxtPath;
+        String solutionDirectory = null;
+        String solutionTxtPath = null;
         FeatureExtractor fe = new FeatureExtractor();
         ParetoOptimalSolutions ps = new ParetoOptimalSolutions();
-//        if (args.length > 2)
-//        alloyFileDirectory = "src/main/java/models/decider.als";
-//        solutionDirectory = "src/main/java/solutions/decider/ImplSolution";
-//        solutionTxtPath = "src/main/java/solutions/decider/decider.txt";
-
-//        alloyFileDirectory = "src/main/java/models/customerOrderObjectModel.als";
-//        solutionDirectory = "src/main/java/solutions/customer_order/ImplSolution";
-//        solutionTxtPath = "src/main/java/solutions/customer_order/customerOrderObjectModel.txt";
-
-//        alloyFileDirectory = "src/main/java/models/CSOS.als";
-//        solutionDirectory = "src/main/java/solutions/CSOS/ImplSolution";
-//        solutionTxtPath = "src/main/java/solutions/CSOS/CSOS.txt";
-
-        alloyFileDirectory = "src/main/java/models/flagship.als";
-        solutionDirectory = "src/main/java/solutions/flagship/ImplSolution";
-        solutionTxtPath = "src/main/java/solutions/flagship/flagship.txt";
+        if (args.length > 2) {
+            alloyFileDirectory = args[1];
+            solutionDirectory = args[2];
+            solutionTxtPath = args[3];
+        }
 
         String[] tmp = alloyFileDirectory.split(SLASH);
         fe.alsFileName = tmp[tmp.length - 1].split(DOT)[0].concat(CSV);
@@ -309,8 +298,6 @@ public class FeatureExtractor {
             }
             allOMFeatures.addAll(solToFeatures);
         }
-
-//        allOMFeatures.forEach(System.out :: println);
 
         FileUtil.generateCSVFileWithAllFeatures(allOMFeatures, alsFileName);
     }
