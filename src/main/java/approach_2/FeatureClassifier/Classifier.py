@@ -8,7 +8,7 @@ from sklearn.pipeline import Pipeline
 
 # Importing Sklearn Classifiers
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import LinearSVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, roc_auc_score, precision_score, recall_score, f1_score, accuracy_score, \
@@ -17,7 +17,9 @@ from sklearn.utils import resample
 from sklearn.ensemble import RandomForestClassifier
 
 from imblearn.over_sampling import SMOTE
+from sklearn.decomposition import PCA
 import warnings
+from timeit import default_timer as timer
 
 pd.options.display.max_columns = None
 pd.set_option('expand_frame_repr', False)
@@ -56,7 +58,7 @@ def upsample_dataset(local_df):
     # Upsampled minority class
     df_minority_upsampled = resample(df_minority,
                                      replace=True,
-                                     n_samples=26804,
+                                     n_samples=len(df_majority),
                                      random_state=28)
 
     local_df = pd.concat([df_majority, df_minority_upsampled])
@@ -182,14 +184,22 @@ def receiver_op_curve(y_true, y_pareto_optimal_probability_scores):
     return FPR, TPR, threshold
 
 
+# Apply PCA reduction technique to reduce the dimension of input features
+def apply_PCA_reduction(x):
+    pca = PCA(n_components=2)
+    pca.fit(x)
+    print("\n#Dimensionality reduction technique PCA....: Applied")
+    return pca
+
+
 # Knn Classifier with GridSearchCV to allow k-fold cross validation during model training.
 # Use 5 fold cross validation strategy
 # Scoring function used is 'f1'
 # n_jobs = -1 means use all the available processors in parallel
 # Hyper parameter are n_neighbors, weights (type of distance), p
-def k_nearest_neighbors_classifier():
+def k_nearest_neighbors_classifier(x_train, x_test):
     warnings.filterwarnings('ignore')
-    x_train, x_test = standardize_data(X_train, X_test)
+    x_train_std, x_test_std = standardize_data(x_train, x_test)
 
     print('\n##   Running KNeighborClassifier   ##')
     k_range = list(range(1, 30))
@@ -202,18 +212,22 @@ def k_nearest_neighbors_classifier():
     # scores = cross_val_score(knn, X_train, y_train, cv=10, scoring='accuracy')
     # print(scores.mean())
 
+    start = timer()
+
     knn_cv = GridSearchCV(knn, param_grid, cv=5, scoring='f1', n_jobs=-1)
-    knn_cv.fit(x_train, y_train)
+    knn_cv.fit(x_train_std, y_train)
     optimal_params = knn_cv.best_params_
+
+    end = timer()
 
     print('Best param:', optimal_params)
     print('Best score:', knn_cv.best_score_)
 
     # Training KNN with best parameters
     knn_clf = KNeighborsClassifier(**optimal_params)
-    knn_clf.fit(x_train, y_train)
-    y_test_pred = knn_clf.predict(x_test)
-    y_test_pred_prob = knn_clf.predict_proba(x_test)
+    knn_clf.fit(x_train_std, y_train)
+    y_test_pred = knn_clf.predict(x_test_std)
+    y_test_pred_prob = knn_clf.predict_proba(x_test_std)
 
     print('Accuracy score:', accuracy_score(y_test, y_test_pred))
     print('ROC_AUC score:', roc_auc_score(y_test, y_test_pred_prob[:, 1]))
@@ -224,32 +238,37 @@ def k_nearest_neighbors_classifier():
 
     print('\nClassification Report')
     print(classification_report(y_test, y_test_pred))
+    print('\n Execution time:', end - start)
 
 
-# Multinomial naive bayes classifier with GridSearchCV for K fold cross validation during model training.
+# Gaussian naive bayes classifier with GridSearchCV for K fold cross validation during model training.
 # No hyper-parameters
-# Smoothing function clf__alpha, Scoring function used 'f1'
-def multinomial_naive_bayes_classifier():
+# Smoothing function var smoothing, Scoring function used 'f1'
+def gaussian_naive_bayes_classifier(x_train, x_test):
     warnings.filterwarnings('ignore')
 
-    print('\n##   Running MultinomialNB Classifier   ##')
-    mnb = MultinomialNB()
+    print('\n##   Running GaussianNB Classifier   ##')
+    gnb = GaussianNB()
     param_grid = {
-        'alpha': [0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1, 1.0, 1.5, 2.0]
+        'var_smoothing': [0.000000001, 0.00000001, 0.0000001, 0.000001, 0.00001, 0.0001]
     }
 
-    mnb_cv = GridSearchCV(mnb, param_grid, scoring='f1', cv=5, verbose=3, n_jobs=-1)
-    mnb_cv.fit(X_train, y_train)
+    start = timer()
+
+    mnb_cv = GridSearchCV(gnb, param_grid, scoring='f1', cv=5, verbose=3, n_jobs=-1)
+    mnb_cv.fit(x_train, y_train)
     optimal_params = mnb_cv.best_params_
+
+    end = timer()
 
     print('Best param:', optimal_params)
     print('Best score:', mnb_cv.best_score_)
 
     # Training MultinomialNB with optimal parameters
-    mnb_clf = MultinomialNB(**optimal_params)
-    mnb_clf.fit(X_train, y_train)
-    y_test_pred = mnb_clf.predict(X_test)
-    y_test_pred_prob = mnb_clf.predict_proba(X_test)
+    mnb_clf = GaussianNB(**optimal_params)
+    mnb_clf.fit(x_train, y_train)
+    y_test_pred = mnb_clf.predict(x_test)
+    y_test_pred_prob = mnb_clf.predict_proba(x_test)
 
     print('Accuracy score:', accuracy_score(y_test, y_test_pred))
     print('ROC_AUC score:', roc_auc_score(y_test, y_test_pred_prob[:, 1]))
@@ -260,28 +279,32 @@ def multinomial_naive_bayes_classifier():
 
     print('\nClassification Report')
     print(classification_report(y_test, y_test_pred))
+    print('\n Execution time:', end - start)
 
 
 # Linear support vector classifier with GridSearchCV for k fold validation during model training
 # Hyper-parameter is the regularization parameter 'C'
 # Scoring function is f1, cv= 5 folds
-def linear_support_vector_classifier():
+def linear_support_vector_classifier(x_train, x_test):
     warnings.filterwarnings('ignore')
-    x_train, x_test = standardize_data(X_train, X_test)
+    x_train_std, x_test_std = standardize_data(x_train, x_test)
 
     print('\n##   Running LinearSV Classifier   ##')
     param_grid = {'C': [1000, 500, 100, 10, 1]}
+
+    start = timer()
     lsv = LinearSVC()
     lsv_cv = GridSearchCV(lsv, param_grid, scoring='f1', cv=5, verbose=1, n_jobs=-1)
-    lsv_cv.fit(x_train, y_train)
+    lsv_cv.fit(x_train_std, y_train)
     optimal_params = lsv_cv.best_params_
     print('Best param:', optimal_params)
     print('Best score:', lsv_cv.best_score_)
+    end = timer()
 
     # Training LinearSVC with optimal parameters
     lsv_clf = LinearSVC(**optimal_params)
-    lsv_clf.fit(x_train, y_train)
-    y_test_pred = lsv_clf.predict(x_test)
+    lsv_clf.fit(x_train_std, y_train)
+    y_test_pred = lsv_clf.predict(x_test_std)
 
     print('Accuracy score:', accuracy_score(y_test, y_test_pred))
     print('Confusion matrix:')
@@ -291,33 +314,38 @@ def linear_support_vector_classifier():
 
     print('\nClassification Report')
     print(classification_report(y_test, y_test_pred))
+    print('\n Execution time:', end - start)
 
 
 # Logistic Regression classifier with GridSearchCV for k fold cross validation during model training
 # Hyper-parameters solver, tol, max_iter, C
 # scoring function f1, 5 fold cross validation
-def logistic_regression_classifier():
+def logistic_regression_classifier(x_train, x_test):
     warnings.filterwarnings('ignore')
-    x_train, x_test = standardize_data(X_train, X_test)
+    x_train_std, x_test_std = standardize_data(x_train, x_test)
 
     print('\n## Running Logistic Regression Classifier  ##')
     param_grid = {'solver': ['liblinear', 'newton-cg', 'lbfgs'],
                   'tol': [1e-3, 1e-4], 'max_iter': [100, 500, 1000],
                   'C': [0.1, 0.5, 1, 1.5, 2, 50, 100]}
 
+    start = timer()
+
     lgr = LogisticRegression()
     lgr_cv = GridSearchCV(lgr, param_grid, scoring='f1', cv=5, verbose=1, n_jobs=-1)
-    lgr_cv.fit(x_train, y_train)
+    lgr_cv.fit(x_train_std, y_train)
     optimal_params = lgr_cv.best_params_
+
+    end = timer()
 
     print('Best param:', optimal_params)
     print('Best score:', lgr_cv.best_score_)
 
     # Training LogisticRegression classifier with optimal parameters
     lgr_clf = LogisticRegression(**optimal_params)
-    lgr_clf.fit(x_train, y_train)
-    y_test_pred = lgr_clf.predict(x_test)
-    y_test_pred_prob = lgr_clf.predict_proba(x_test)
+    lgr_clf.fit(x_train_std, y_train)
+    y_test_pred = lgr_clf.predict(x_test_std)
+    y_test_pred_prob = lgr_clf.predict_proba(x_test_std)
 
     print('Accuracy score:', accuracy_score(y_test, y_test_pred))
     print('ROC_AUC score:', roc_auc_score(y_test, y_test_pred_prob[:, 1]))
@@ -328,32 +356,38 @@ def logistic_regression_classifier():
 
     print('\nClassification Report')
     print(classification_report(y_test, y_test_pred))
+    print('\n Execution time:', end - start)
 
 
 # RandomForestClassifier with GridSearchCV for k fold cross validation during model training.
 # Hyper-parameters are n_estimators, max_features, max_depth
 # Scoring function f1, 5 fold cross validation
-def random_forest_classifier():
+def random_forest_classifier(x_train, x_test):
     warnings.filterwarnings('ignore')
-    x_train, x_test = standardize_data(X_train, X_test)
+    x_train_std, x_test_std = standardize_data(x_train, x_test)
 
     print('\n##   Running Random Forest Classifier   ##')
     param_grid = {'n_estimators': [500, 1000],
                   'max_features': ['auto', 'sqrt', 'log2'],
                   'max_depth': [4, 5, 6]}
+
+    start = timer()
+
     rfc = RandomForestClassifier(random_state=42)
     rfc_cv = GridSearchCV(rfc, param_grid, cv=5, verbose=1, n_jobs=-1)
-    rfc_cv.fit(x_train, y_train)
+    rfc_cv.fit(x_train_std, y_train)
     optimal_params = rfc_cv.best_params_
+
+    end = timer()
 
     print('Best param:', optimal_params)
     print('Best score:', rfc_cv.best_score_)
 
     # Training RandomForestClassifier with optimal parameters
     rfc_clf = RandomForestClassifier(**optimal_params)
-    rfc_clf.fit(x_train, y_train)
-    y_test_pred = rfc_clf.predict(x_test)
-    y_test_pred_prob = rfc_clf.predict_proba(x_test)
+    rfc_clf.fit(x_train_std, y_train)
+    y_test_pred = rfc_clf.predict(x_test_std)
+    y_test_pred_prob = rfc_clf.predict_proba(x_test_std)
 
     print('Accuracy score:', accuracy_score(y_test, y_test_pred))
     print('ROC_AUC score:', roc_auc_score(y_test, y_test_pred_prob[:, 1]))
@@ -364,6 +398,7 @@ def random_forest_classifier():
 
     print('\nClassification Report')
     print(classification_report(y_test, y_test_pred))
+    print('\n Execution time:', end - start)
 
 
 if __name__ == '__main__':
@@ -383,19 +418,42 @@ if __name__ == '__main__':
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=28)
     print('\nX_train shape:', X_train.shape)
 
-    # X_train, y_train = upsample_SMOTE_dataset(X_train, y_train)
+    # Calling PCA reduction
+    pca_tech = apply_PCA_reduction(X_train)
+    X_train_reduced = pca_tech.transform(X_train)
+    X_test_reduced = pca_tech.transform(X_test)
 
-    # Calling KNearestNeighborClassifier
-    k_nearest_neighbors_classifier()
+    # # Calling KNearestNeighborClassifier with input feature
+    # k_nearest_neighbors_classifier(X_train, X_test)
+    # # Best param: {'n_neighbors': 25, 'p': 1, 'weights': 'distance'}
+    #
+    # # Calling KNearestNeighborsClassifier with input features with reduced dimension
+    # k_nearest_neighbors_classifier(X_train_reduced, X_test_reduced)
+    # # Best param: {'n_neighbors': 27, 'p': 1, 'weights': 'distance'}
 
-    # Calling Multinomial Naive Bayes Classifier
-    # multinomial_naive_bayes_classifier()
+    # Calling Gaussian Naive Bayes Classifier
+    # gaussian_naive_bayes_classifier(X_train, X_test)
+    # Best param: {'alpha': 1e-06}
 
     # Calling Linear Support Vector Classifier
-    # linear_support_vector_classifier()
+    linear_support_vector_classifier(X_train, X_test)
+    # Best param: {'C': 10}
 
-    # Calling Logistic Regression Classifier
-    # logistic_regression_classifier()
+    # Calling Linear Support Vector Classifier with input features with reduced dimension
+    linear_support_vector_classifier(X_train_reduced, X_test_reduced)
 
-    # Calling Random Forest Classifier
-    # random_forest_classifier()
+    # # Calling Logistic Regression Classifier
+    # logistic_regression_classifier(X_train, X_test)
+    #
+    # # Calling Logistic Regression with input features with reduced dimension
+    # logistic_regression_classifier(X_train_reduced, X_test_reduced)
+
+    # # Calling Random Forest Classifier
+    # random_forest_classifier(X_train, X_test)
+    # # Best param: {'max_depth': 6, 'max_features': 'auto', 'n_estimators': 500}
+    # # 1       0.79P      0.72R      0.75F1
+    #
+    # # Calling Random Forest Classifier with input features with reduced dimension
+    # random_forest_classifier(X_train_reduced, X_test_reduced)
+    # # Best param: {'max_depth': 6, 'max_features': 'auto', 'n_estimators': 500}
+    # # 1       0.77P      0.74R      0.77F1
