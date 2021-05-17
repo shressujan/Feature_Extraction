@@ -1,0 +1,199 @@
+Computing Satisfying Solutions ...
+Current Time: 2021-05-14 18:13:53.930
+-----------------------------------------
+Solution #1 has been generated.
+Eq.Class #1
+
+TATI(Admin)= 1
+TATI(Customer)= 1
+TATI(Payment)= 1
+TATI(Guest)= 1
+TATI(Products)= 1
+TATI(Cart)= 1
+Overall_TATI(solution:1)= 6
+
+NCT(Admin)= 1
+NCT(Customer)= 1
+NCT(Payment)= 1
+NCT(Guest)= 1
+NCT(Products)= 4
+NCT(Cart)= 1
+Overall_NCT(solution:1)= 9
+
+NCRF(Admin)= 1
+NCRF(Customer)= 1
+NCRF(Payment)= 1
+NCRF(Guest)= 0
+NCRF(Products)= 1
+NCRF(Cart)= 1
+Overall_NCRF(solution:1)= 5
+
+ANV(Admin)= 0
+ANV(Customer)= 0
+ANV(Payment)= 0
+ANV(Guest)= 0
+ANV(Products)= 0
+ANV(Cart)= 0
+Overall_ANV(solution:1)= 0
+Overall_NIC(solution:1)= 9
+Overall_NFK(solution:1)= 7
+Eq.Classes: 1 / 1
+-----------------------------------------
+-----------------------------------------
+Solution #2 has been generated.
+Eq.Class #1
+-----------------------------------------
+Solution #3 has been generated.
+Eq.Class #2
+
+TATI(Admin)= 1
+TATI(Customer)= 1
+TATI(Payment)= 1
+TATI(Guest)= 1
+TATI(Products)= 1
+TATI(Cart)= 1
+Overall_TATI(solution:3)= 6
+
+NCT(Admin)= 1
+NCT(Customer)= 1
+NCT(Payment)= 1
+NCT(Guest)= 1
+NCT(Products)= 3
+NCT(Cart)= 1
+Overall_NCT(solution:3)= 8
+
+NCRF(Admin)= 1
+NCRF(Customer)= 1
+NCRF(Payment)= 1
+NCRF(Guest)= 0
+NCRF(Products)= 1
+NCRF(Cart)= 1
+Overall_NCRF(solution:3)= 5
+
+ANV(Admin)= 0
+ANV(Customer)= 0
+ANV(Payment)= 0
+ANV(Guest)= 0
+ANV(Products)= 0
+ANV(Cart)= 0
+Overall_ANV(solution:3)= 0
+Overall_NIC(solution:3)= 8
+Overall_NFK(solution:3)= 8
+Eq.Classes: 2 / 3
+-----------------------------------------
+-----------------------------------------
+Solution #4 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #5 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #6 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #7 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #8 has been generated.
+Eq.Class #3
+
+TATI(Admin)= 1
+TATI(Customer)= 1
+TATI(Payment)= 1
+TATI(Guest)= 1
+TATI(Products)= 1
+TATI(Cart)= 1
+Overall_TATI(solution:8)= 6
+
+NCT(Admin)= 1
+NCT(Customer)= 1
+NCT(Payment)= 1
+NCT(Guest)= 1
+NCT(Products)= 2
+NCT(Cart)= 1
+Overall_NCT(solution:8)= 7
+
+NCRF(Admin)= 1
+NCRF(Customer)= 1
+NCRF(Payment)= 1
+NCRF(Guest)= 0
+NCRF(Products)= 1
+NCRF(Cart)= 1
+Overall_NCRF(solution:8)= 5
+
+ANV(Admin)= 0
+ANV(Customer)= 0
+ANV(Payment)= 0
+ANV(Guest)= 0
+ANV(Products)= 0
+ANV(Cart)= 0
+Overall_ANV(solution:8)= 0
+Overall_NIC(solution:8)= 7
+Overall_NFK(solution:8)= 9
+Eq.Classes: 3 / 8
+-----------------------------------------
+-----------------------------------------
+Solution #9 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #10 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #11 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #12 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #13 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #14 has been generated.
+Eq.Class #4
+
+TATI(Admin)= 1
+TATI(Customer)= 1
+TATI(Payment)= 1
+TATI(Guest)= 1
+TATI(Products)= 1
+TATI(Cart)= 1
+Overall_TATI(solution:14)= 6
+
+NCT(Admin)= 1
+NCT(Customer)= 1
+NCT(Payment)= 1
+NCT(Guest)= 1
+NCT(Products)= 1
+NCT(Cart)= 1
+Overall_NCT(solution:14)= 6
+
+NCRF(Admin)= 1
+NCRF(Customer)= 1
+NCRF(Payment)= 1
+NCRF(Guest)= 0
+NCRF(Products)= 1
+NCRF(Cart)= 1
+Overall_NCRF(solution:14)= 5
+
+ANV(Admin)= 0
+ANV(Customer)= 0
+ANV(Payment)= 0
+ANV(Guest)= 0
+ANV(Products)= 0
+ANV(Cart)= 0
+Overall_ANV(solution:14)= 0
+Overall_NIC(solution:14)= 6
+Overall_NFK(solution:14)= 10
+Eq.Classes: 4 / 14
+-----------------------------------------
+-----------------------------------------
+Solution #15 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #16 has been generated.
+Eq.Class #4
+
+-----------------------------------------
+# Eq.Classes: 4 / 17
+Current Time: 2021-05-14 18:15:07.289
+No more Satisfying solutions

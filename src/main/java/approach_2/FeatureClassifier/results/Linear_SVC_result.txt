@@ -1,0 +1,48 @@
+##   Running LinearSV Classifier   ##
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Best param: {'C': 1}
+Best score: 0.6437369282641946
+Accuracy score: 0.6539097422080705
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[5529 2551]
+ [3101 5150]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.64      0.68      0.66      8080
+           1       0.67      0.62      0.65      8251
+
+    accuracy                           0.65     16331
+   macro avg       0.65      0.65      0.65     16331
+weighted avg       0.65      0.65      0.65     16331
+
+
+ Execution time: 24.804283928999997
+# Standardizing the Training and Testing feature sets....: Completed
+
+##   Running LinearSV Classifier   ##
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Best param: {'C': 1000}
+Best score: 0.5934695428439657
+Accuracy score: 0.5547731308554283
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[3655 4425]
+ [2846 5405]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.56      0.45      0.50      8080
+           1       0.55      0.66      0.60      8251
+
+    accuracy                           0.55     16331
+   macro avg       0.56      0.55      0.55     16331
+weighted avg       0.56      0.55      0.55     16331
+
+
+ Execution time: 12.611578091000002

@@ -1,0 +1,23 @@
+##   Running GaussianNB Classifier   ##
+Best param: {'var_smoothing': 0.0001}
+Best score: 0.7040862420901114
+Accuracy score: 0.6942834983347781
+ROC_AUC score: 0.7625958802008963
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[7188 3725]
+ [2976 8030]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.71      0.66      0.68     10913
+           1       0.68      0.73      0.71     11006
+
+    accuracy                           0.69     21919
+   macro avg       0.70      0.69      0.69     21919
+weighted avg       0.70      0.69      0.69     21919
+
+
+ Execution time: 0.3878895749999174

@@ -1,0 +1,50 @@
+##   Running KNeighborClassifier   ##
+# Range of Neighbors: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+Best param: {'n_neighbors': 25, 'p': 1, 'weights': 'distance'}
+Best score: 0.7427058281032874
+Accuracy score: 0.7718449574429
+ROC_AUC score: 0.8502845167399931
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[6386 1810]
+ [1916 6219]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.77      0.78      0.77      8196
+           1       0.77      0.76      0.77      8135
+
+    accuracy                           0.77     16331
+   macro avg       0.77      0.77      0.77     16331
+weighted avg       0.77      0.77      0.77     16331
+
+
+ Execution time: 1088.683568961
+# Standardizing the Training and Testing feature sets....: Completed
+
+##   Running KNeighborClassifier   ##
+# Range of Neighbors: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+Best param: {'n_neighbors': 23, 'p': 1, 'weights': 'distance'}
+Best score: 0.7448893919043941
+Accuracy score: 0.7506582573020636
+ROC_AUC score: 0.8337130514442862
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[6954 1242]
+ [2830 5305]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.71      0.85      0.77      8196
+           1       0.81      0.65      0.72      8135
+
+    accuracy                           0.75     16331
+   macro avg       0.76      0.75      0.75     16331
+weighted avg       0.76      0.75      0.75     16331
+
+
+ Execution time: 122.31174413599979

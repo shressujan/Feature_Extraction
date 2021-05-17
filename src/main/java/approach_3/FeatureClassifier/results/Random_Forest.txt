@@ -1,0 +1,24 @@
+##   Running Random Forest Classifier   ##
+Fitting 5 folds for each of 18 candidates, totalling 90 fits
+Best param: {'max_depth': 6, 'max_features': 'auto', 'n_estimators': 1000}
+Best score: 0.793676625762797
+Accuracy score: 0.7531365482001916
+ROC_AUC score: 0.8352927759187825
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[8655 2258]
+ [3153 7853]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.73      0.79      0.76     10913
+           1       0.78      0.71      0.74     11006
+
+    accuracy                           0.75     21919
+   macro avg       0.75      0.75      0.75     21919
+weighted avg       0.75      0.75      0.75     21919
+
+
+ Execution time: 111.89864044500018

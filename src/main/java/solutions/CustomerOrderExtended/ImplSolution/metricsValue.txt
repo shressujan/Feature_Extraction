@@ -1,0 +1,165 @@
+Computing Satisfying Solutions ...
+Current Time: 2021-05-14 18:18:20.933
+-----------------------------------------
+Solution #1 has been generated.
+Eq.Class #1
+
+TATI(Company)= 1
+TATI(Item)= 1
+TATI(Order)= 1
+TATI(Person)= 1
+TATI(Customer)= 1
+Overall_TATI(solution:1)= 5
+
+NCT(Company)= 1
+NCT(Item)= 2
+NCT(Order)= 2
+NCT(Person)= 1
+NCT(Customer)= 1
+Overall_NCT(solution:1)= 7
+
+NCRF(Company)= 1
+NCRF(Item)= 1
+NCRF(Order)= 1
+NCRF(Person)= 1
+NCRF(Customer)= 1
+Overall_NCRF(solution:1)= 5
+
+ANV(Company)= 1
+ANV(Item)= 0
+ANV(Order)= 0
+ANV(Person)= 1
+ANV(Customer)= 4
+Overall_ANV(solution:1)= 6
+Overall_NIC(solution:1)= 11
+Overall_NFK(solution:1)= 2
+Eq.Classes: 1 / 1
+-----------------------------------------
+-----------------------------------------
+Solution #2 has been generated.
+Eq.Class #2
+
+TATI(Company)= 1
+TATI(Item)= 1
+TATI(Order)= 1
+TATI(Person)= 1
+TATI(Customer)= 3
+Overall_TATI(solution:2)= 7
+
+NCT(Company)= 2
+NCT(Item)= 2
+NCT(Order)= 2
+NCT(Person)= 1
+NCT(Customer)= 1
+Overall_NCT(solution:2)= 8
+
+NCRF(Company)= 1
+NCRF(Item)= 1
+NCRF(Order)= 1
+NCRF(Person)= 1
+NCRF(Customer)= 2
+Overall_NCRF(solution:2)= 6
+
+ANV(Company)= 0
+ANV(Item)= 0
+ANV(Order)= 0
+ANV(Person)= 0
+ANV(Customer)= 0
+Overall_ANV(solution:2)= 0
+Overall_NIC(solution:2)= 17
+Overall_NFK(solution:2)= 3
+Eq.Classes: 2 / 2
+-----------------------------------------
+-----------------------------------------
+Solution #3 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #4 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #5 has been generated.
+Eq.Class #3
+
+TATI(Company)= 1
+TATI(Item)= 1
+TATI(Order)= 1
+TATI(Person)= 1
+TATI(Customer)= 3
+Overall_TATI(solution:5)= 7
+
+NCT(Company)= 1
+NCT(Item)= 2
+NCT(Order)= 2
+NCT(Person)= 1
+NCT(Customer)= 1
+Overall_NCT(solution:5)= 7
+
+NCRF(Company)= 1
+NCRF(Item)= 1
+NCRF(Order)= 1
+NCRF(Person)= 1
+NCRF(Customer)= 3
+Overall_NCRF(solution:5)= 7
+
+ANV(Company)= 0
+ANV(Item)= 0
+ANV(Order)= 0
+ANV(Person)= 0
+ANV(Customer)= 0
+Overall_ANV(solution:5)= 0
+Overall_NIC(solution:5)= 17
+Overall_NFK(solution:5)= 2
+Eq.Classes: 3 / 5
+-----------------------------------------
+-----------------------------------------
+Solution #6 has been generated.
+Eq.Class #1
+-----------------------------------------
+Solution #7 has been generated.
+Eq.Class #4
+
+TATI(Company)= 1
+TATI(Item)= 1
+TATI(Order)= 1
+TATI(Person)= 1
+TATI(Customer)= 3
+Overall_TATI(solution:7)= 7
+
+NCT(Company)= 2
+NCT(Item)= 2
+NCT(Order)= 2
+NCT(Person)= 2
+NCT(Customer)= 1
+Overall_NCT(solution:7)= 9
+
+NCRF(Company)= 1
+NCRF(Item)= 1
+NCRF(Order)= 1
+NCRF(Person)= 1
+NCRF(Customer)= 1
+Overall_NCRF(solution:7)= 5
+
+ANV(Company)= 0
+ANV(Item)= 0
+ANV(Order)= 0
+ANV(Person)= 0
+ANV(Customer)= 0
+Overall_ANV(solution:7)= 0
+Overall_NIC(solution:7)= 17
+Overall_NFK(solution:7)= 4
+Eq.Classes: 4 / 7
+-----------------------------------------
+-----------------------------------------
+Solution #8 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #9 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #10 has been generated.
+Eq.Class #4
+
+-----------------------------------------
+# Eq.Classes: 4 / 11
+Current Time: 2021-05-14 18:18:27.441
+No more Satisfying solutions

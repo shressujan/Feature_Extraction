@@ -1,0 +1,50 @@
+## Running Logistic Regression Classifier  ##
+Fitting 5 folds for each of 126 candidates, totalling 630 fits
+Best param: {'C': 0.1, 'max_iter': 100, 'solver': 'liblinear', 'tol': 0.001}
+Best score: 0.7306534985934122
+Accuracy score: 0.7298234408504037
+ROC_AUC score: 0.8123367153149673
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[7972 2941]
+ [2981 8025]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.73      0.73      0.73     10913
+           1       0.73      0.73      0.73     11006
+
+    accuracy                           0.73     21919
+   macro avg       0.73      0.73      0.73     21919
+weighted avg       0.73      0.73      0.73     21919
+
+
+ Execution time: 19.691941099999895
+# Standardizing the Training and Testing feature sets....: Completed
+
+## Running Logistic Regression Classifier  ##
+Fitting 5 folds for each of 126 candidates, totalling 630 fits
+Best param: {'C': 0.1, 'max_iter': 100, 'solver': 'liblinear', 'tol': 0.001}
+Best score: 0.6873051826981582
+Accuracy score: 0.6838359414206853
+ROC_AUC score: 0.7611319410774651
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[7150 3763]
+ [3167 7839]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.69      0.66      0.67     10913
+           1       0.68      0.71      0.69     11006
+
+    accuracy                           0.68     21919
+   macro avg       0.68      0.68      0.68     21919
+weighted avg       0.68      0.68      0.68     21919
+
+
+ Execution time: 4.43734900000004

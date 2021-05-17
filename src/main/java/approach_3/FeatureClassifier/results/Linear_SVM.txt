@@ -1,0 +1,22 @@
+##   Running LinearSV Classifier   ##
+Best param: {'C': 500}
+Best score: 0.6517310837648561
+Accuracy score: 0.6125735663123317
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[7231 3682]
+ [4810 6196]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.60      0.66      0.63     10913
+           1       0.63      0.56      0.59     11006
+
+    accuracy                           0.61     21919
+   macro avg       0.61      0.61      0.61     21919
+weighted avg       0.61      0.61      0.61     21919
+
+
+ Execution time: 21.56735159899995

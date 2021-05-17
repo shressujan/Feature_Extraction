@@ -1,0 +1,856 @@
+<alloy builddate="2008/10/27 23:45 EDT">
+
+<instance bitwidth="4" maxseq="7" command="Run mapping_run_CSOS for 43" filename="">
+
+<sig label="univ" ID="0" builtin="yes">
+   <atom label="assertions/relationalModel/Table$0"/>
+   <atom label="assertions/relationalModel/Table$1"/>
+   <atom label="assertions/relationalModel/Table$2"/>
+   <atom label="assertions/relationalModel/Table$3"/>
+   <atom label="assertions/relationalModel/Table$4"/>
+   <atom label="assertions/relationalModel/Table$5"/>
+   <atom label="assertions/relationalModel/Table$6"/>
+   <atom label="assertions/relationalModel/Table$7"/>
+   <atom label="assertions/relationalModel/Table$8"/>
+   <atom label="assertions/relationalModel/Table$9"/>
+   <atom label="assertions/relationalModel/Table$10"/>
+   <atom label="assertions/relationalModel/Table$11"/>
+   <atom label="assertions/relationalModel/Table$12"/>
+   <atom label="assertions/relationalModel/Table$13"/>
+   <atom label="assertions/relationalModel/Table$14"/>
+   <atom label="assertions/relationalModel/Field$0"/>
+   <atom label="assertions/relationalModel/Field$1"/>
+   <atom label="assertions/relationalModel/Field$2"/>
+   <atom label="assertions/relationalModel/Field$3"/>
+   <atom label="assertions/relationalModel/Field$4"/>
+   <atom label="assertions/relationalModel/Field$5"/>
+   <atom label="assertions/relationalModel/Field$6"/>
+   <atom label="assertions/relationalModel/Field$7"/>
+   <atom label="assertions/relationalModel/Field$8"/>
+   <atom label="assertions/relationalModel/Field$9"/>
+   <atom label="assertions/relationalModel/Field$10"/>
+   <atom label="assertions/relationalModel/Field$11"/>
+   <atom label="assertions/relationalModel/Field$12"/>
+   <atom label="assertions/relationalModel/Field$13"/>
+   <atom label="assertions/relationalModel/Field$14"/>
+   <atom label="assertions/relationalModel/Field$15"/>
+   <atom label="assertions/relationalModel/Field$16"/>
+   <atom label="assertions/relationalModel/Field$17"/>
+   <atom label="assertions/relationalModel/Field$18"/>
+   <atom label="assertions/relationalModel/Field$19"/>
+   <atom label="assertions/relationalModel/Field$20"/>
+   <atom label="assertions/relationalModel/Field$21"/>
+   <atom label="assertions/relationalModel/Field$22"/>
+   <atom label="CSOS/Channel"/>
+   <atom label="CSOS/EmailChannel"/>
+   <atom label="CSOS/SecEmailChannel"/>
+   <atom label="CSOS/SMSChannel"/>
+   <atom label="CSOS/Principal"/>
+   <atom label="CSOS/Person"/>
+   <atom label="CSOS/Viewer"/>
+   <atom label="CSOS/Institution"/>
+   <atom label="CSOS/ProcessStateMachine"/>
+   <atom label="CSOS/ProcessStateMachineState"/>
+   <atom label="CSOS/ProcessStateMachineAction"/>
+   <atom label="CSOS/ProcessStateMachineEvent"/>
+   <atom label="CSOS/ProcessStateMachineTransition"/>
+   <atom label="CSOS/ProcessStateMachineExecution"/>
+   <atom label="CSOS/channelID"/>
+   <atom label="CSOS/emailID"/>
+   <atom label="CSOS/secEmailID"/>
+   <atom label="CSOS/principalID"/>
+   <atom label="CSOS/role"/>
+   <atom label="CSOS/period"/>
+   <atom label="CSOS/InstitutionID"/>
+   <atom label="CSOS/stateMachineID"/>
+   <atom label="CSOS/stateID"/>
+   <atom label="CSOS/entryActionID"/>
+   <atom label="CSOS/exitActionID"/>
+   <atom label="CSOS/actionID"/>
+   <atom label="CSOS/actionStateMachineID"/>
+   <atom label="CSOS/eventID"/>
+   <atom label="CSOS/transitionID"/>
+   <atom label="CSOS/fromStateID"/>
+   <atom label="CSOS/toStateID"/>
+   <atom label="CSOS/processStateMachineExecutionID"/>
+   <atom label="CSOS/processStateMachineID"/>
+   <atom label="CSOS/currentStateID"/>
+   <atom label="CSOS/smsProvider"/>
+   <atom label="CSOS/telNo"/>
+   <atom label="CSOS/principalName"/>
+   <atom label="CSOS/PrincipalProxy"/>
+   <atom label="CSOS/StateMachineStates"/>
+   <atom label="CSOS/StateMachineEvents"/>
+   <atom label="CSOS/StateMachineTransitions"/>
+   <atom label="AssociationMappings/Declaration/No$0"/>
+   <atom label="AssociationMappings/Declaration/ONE"/>
+   <atom label="AssociationMappings/Declaration/MANY"/>
+   <atom label="ORMStrategies/UnionSubclassStrategy"/>
+   <atom label="ORMStrategies/JoinedSubclassStrategy"/>
+   <atom label="ORMStrategies/UnionSuperclassStrategy"/>
+   <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/>
+   <atom label="AssociationMappings/OwnAssociationTableStrategy"/>
+   <atom label="AssociationMappings/MergingOneTableStrategy"/>
+   <atom label="AssociationMappings/AssociationMappingStrategies"/>
+   <atom label="-8"/>
+   <atom label="-7"/>
+   <atom label="-6"/>
+   <atom label="-5"/>
+   <atom label="-4"/>
+   <atom label="-3"/>
+   <atom label="-2"/>
+   <atom label="-1"/>
+   <atom label="0"/>
+   <atom label="1"/>
+   <atom label="2"/>
+   <atom label="3"/>
+   <atom label="4"/>
+   <atom label="5"/>
+   <atom label="6"/>
+   <atom label="7"/>
+</sig>
+
+<sig label="Int" ID="1" parentID="0" builtin="yes">
+   <atom label="-8"/>
+   <atom label="-7"/>
+   <atom label="-6"/>
+   <atom label="-5"/>
+   <atom label="-4"/>
+   <atom label="-3"/>
+   <atom label="-2"/>
+   <atom label="-1"/>
+   <atom label="0"/>
+   <atom label="1"/>
+   <atom label="2"/>
+   <atom label="3"/>
+   <atom label="4"/>
+   <atom label="5"/>
+   <atom label="6"/>
+   <atom label="7"/>
+</sig>
+
+<sig label="seq/Int" ID="2" parentID="1" builtin="yes">
+   <atom label="0"/>
+   <atom label="1"/>
+   <atom label="2"/>
+   <atom label="3"/>
+   <atom label="4"/>
+   <atom label="5"/>
+   <atom label="6"/>
+</sig>
+
+<sig label="fun/String" ID="3" parentID="0" builtin="yes">
+</sig>
+
+<sig label="assertions/relationalModel/Table" ID="4" parentID="0">
+   <atom label="assertions/relationalModel/Table$0"/>
+   <atom label="assertions/relationalModel/Table$1"/>
+   <atom label="assertions/relationalModel/Table$2"/>
+   <atom label="assertions/relationalModel/Table$3"/>
+   <atom label="assertions/relationalModel/Table$4"/>
+   <atom label="assertions/relationalModel/Table$5"/>
+   <atom label="assertions/relationalModel/Table$6"/>
+   <atom label="assertions/relationalModel/Table$7"/>
+   <atom label="assertions/relationalModel/Table$8"/>
+   <atom label="assertions/relationalModel/Table$9"/>
+   <atom label="assertions/relationalModel/Table$10"/>
+   <atom label="assertions/relationalModel/Table$11"/>
+   <atom label="assertions/relationalModel/Table$12"/>
+   <atom label="assertions/relationalModel/Table$13"/>
+   <atom label="assertions/relationalModel/Table$14"/>
+</sig>
+
+<field label="fields" ID="5" parentID="4">
+   <tuple> <atom label="assertions/relationalModel/Table$0"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="assertions/relationalModel/Field$21"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="assertions/relationalModel/Field$20"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="assertions/relationalModel/Field$21"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$4"/> <atom label="assertions/relationalModel/Field$15"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$12"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$13"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$14"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$15"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$6"/> <atom label="assertions/relationalModel/Field$10"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$6"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$9"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$15"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="assertions/relationalModel/Field$6"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="assertions/relationalModel/Field$7"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="assertions/relationalModel/Field$8"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="assertions/relationalModel/Field$15"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="assertions/relationalModel/Field$3"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="assertions/relationalModel/Field$4"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="assertions/relationalModel/Field$5"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$10"/> <atom label="assertions/relationalModel/Field$1"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$10"/> <atom label="assertions/relationalModel/Field$2"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$10"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$11"/> <atom label="assertions/relationalModel/Field$0"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$11"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$12"/> <atom label="assertions/relationalModel/Field$0"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$12"/> <atom label="assertions/relationalModel/Field$18"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$12"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$13"/> <atom label="assertions/relationalModel/Field$0"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$13"/> <atom label="assertions/relationalModel/Field$17"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$13"/> <atom label="assertions/relationalModel/Field$18"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$13"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$14"/> <atom label="assertions/relationalModel/Field$0"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$14"/> <atom label="assertions/relationalModel/Field$16"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$14"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<field label="primaryKey" ID="7" parentID="4">
+   <tuple> <atom label="assertions/relationalModel/Table$0"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$4"/> <atom label="assertions/relationalModel/Field$15"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$14"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$6"/> <atom label="assertions/relationalModel/Field$11"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$9"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="assertions/relationalModel/Field$8"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="assertions/relationalModel/Field$5"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$10"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$11"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$12"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$13"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$14"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<field label="foreignKey" ID="8" parentID="4">
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$19"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="assertions/relationalModel/Field$15"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="assertions/relationalModel/Field$15"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="assertions/relationalModel/Field$15"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$10"/> <atom label="assertions/relationalModel/Field$22"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<field label="tAssociate" ID="9" parentID="4">
+   <tuple> <atom label="assertions/relationalModel/Table$0"/> <atom label="CSOS/Channel"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$1"/> <atom label="CSOS/EmailChannel"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$2"/> <atom label="CSOS/SecEmailChannel"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$3"/> <atom label="CSOS/PrincipalProxy"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$4"/> <atom label="CSOS/ProcessStateMachine"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$5"/> <atom label="CSOS/ProcessStateMachineState"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$6"/> <atom label="CSOS/ProcessStateMachineAction"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$7"/> <atom label="CSOS/ProcessStateMachineEvent"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$8"/> <atom label="CSOS/ProcessStateMachineTransition"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$9"/> <atom label="CSOS/ProcessStateMachineExecution"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$10"/> <atom label="CSOS/SMSChannel"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$11"/> <atom label="CSOS/Principal"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$12"/> <atom label="CSOS/Person"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$13"/> <atom label="CSOS/Viewer"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Table$14"/> <atom label="CSOS/Institution"/> </tuple>
+   <types> <type ID="4"/> <type ID="10"/> </types>
+   <types> <type ID="4"/> <type ID="11"/> </types>
+</field>
+
+<sig label="assertions/relationalModel/Field" ID="6" parentID="0">
+   <atom label="assertions/relationalModel/Field$0"/>
+   <atom label="assertions/relationalModel/Field$1"/>
+   <atom label="assertions/relationalModel/Field$2"/>
+   <atom label="assertions/relationalModel/Field$3"/>
+   <atom label="assertions/relationalModel/Field$4"/>
+   <atom label="assertions/relationalModel/Field$5"/>
+   <atom label="assertions/relationalModel/Field$6"/>
+   <atom label="assertions/relationalModel/Field$7"/>
+   <atom label="assertions/relationalModel/Field$8"/>
+   <atom label="assertions/relationalModel/Field$9"/>
+   <atom label="assertions/relationalModel/Field$10"/>
+   <atom label="assertions/relationalModel/Field$11"/>
+   <atom label="assertions/relationalModel/Field$12"/>
+   <atom label="assertions/relationalModel/Field$13"/>
+   <atom label="assertions/relationalModel/Field$14"/>
+   <atom label="assertions/relationalModel/Field$15"/>
+   <atom label="assertions/relationalModel/Field$16"/>
+   <atom label="assertions/relationalModel/Field$17"/>
+   <atom label="assertions/relationalModel/Field$18"/>
+   <atom label="assertions/relationalModel/Field$19"/>
+   <atom label="assertions/relationalModel/Field$20"/>
+   <atom label="assertions/relationalModel/Field$21"/>
+   <atom label="assertions/relationalModel/Field$22"/>
+</sig>
+
+<field label="fAssociate" ID="12" parentID="6">
+   <tuple> <atom label="assertions/relationalModel/Field$0"/> <atom label="CSOS/principalName"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$1"/> <atom label="CSOS/telNo"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$2"/> <atom label="CSOS/smsProvider"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$3"/> <atom label="CSOS/currentStateID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$4"/> <atom label="CSOS/processStateMachineID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$5"/> <atom label="CSOS/processStateMachineExecutionID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$6"/> <atom label="CSOS/toStateID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$7"/> <atom label="CSOS/fromStateID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$8"/> <atom label="CSOS/transitionID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$9"/> <atom label="CSOS/eventID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$10"/> <atom label="CSOS/actionStateMachineID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$11"/> <atom label="CSOS/actionID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$12"/> <atom label="CSOS/exitActionID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$13"/> <atom label="CSOS/entryActionID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$14"/> <atom label="CSOS/stateID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$15"/> <atom label="CSOS/stateMachineID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$16"/> <atom label="CSOS/InstitutionID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$17"/> <atom label="CSOS/period"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$18"/> <atom label="CSOS/role"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$19"/> <atom label="CSOS/principalID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$20"/> <atom label="CSOS/secEmailID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$21"/> <atom label="CSOS/emailID"/> </tuple>
+   <tuple> <atom label="assertions/relationalModel/Field$22"/> <atom label="CSOS/channelID"/> </tuple>
+   <types> <type ID="6"/> <type ID="13"/> </types>
+</field>
+
+<sig label="AssociationMappings/Declaration/needHandle" ID="13" parentID="0" abstract="yes">
+   <atom label="CSOS/Channel"/>
+   <atom label="CSOS/EmailChannel"/>
+   <atom label="CSOS/SecEmailChannel"/>
+   <atom label="CSOS/SMSChannel"/>
+   <atom label="CSOS/Principal"/>
+   <atom label="CSOS/Person"/>
+   <atom label="CSOS/Viewer"/>
+   <atom label="CSOS/Institution"/>
+   <atom label="CSOS/ProcessStateMachine"/>
+   <atom label="CSOS/ProcessStateMachineState"/>
+   <atom label="CSOS/ProcessStateMachineAction"/>
+   <atom label="CSOS/ProcessStateMachineEvent"/>
+   <atom label="CSOS/ProcessStateMachineTransition"/>
+   <atom label="CSOS/ProcessStateMachineExecution"/>
+   <atom label="CSOS/channelID"/>
+   <atom label="CSOS/emailID"/>
+   <atom label="CSOS/secEmailID"/>
+   <atom label="CSOS/principalID"/>
+   <atom label="CSOS/role"/>
+   <atom label="CSOS/period"/>
+   <atom label="CSOS/InstitutionID"/>
+   <atom label="CSOS/stateMachineID"/>
+   <atom label="CSOS/stateID"/>
+   <atom label="CSOS/entryActionID"/>
+   <atom label="CSOS/exitActionID"/>
+   <atom label="CSOS/actionID"/>
+   <atom label="CSOS/actionStateMachineID"/>
+   <atom label="CSOS/eventID"/>
+   <atom label="CSOS/transitionID"/>
+   <atom label="CSOS/fromStateID"/>
+   <atom label="CSOS/toStateID"/>
+   <atom label="CSOS/processStateMachineExecutionID"/>
+   <atom label="CSOS/processStateMachineID"/>
+   <atom label="CSOS/currentStateID"/>
+   <atom label="CSOS/smsProvider"/>
+   <atom label="CSOS/telNo"/>
+   <atom label="CSOS/principalName"/>
+   <atom label="CSOS/PrincipalProxy"/>
+   <atom label="CSOS/StateMachineStates"/>
+   <atom label="CSOS/StateMachineEvents"/>
+   <atom label="CSOS/StateMachineTransitions"/>
+   <atom label="AssociationMappings/Declaration/No$0"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Attribute" ID="14" parentID="13" abstract="yes">
+   <atom label="CSOS/Channel"/>
+   <atom label="CSOS/EmailChannel"/>
+   <atom label="CSOS/SecEmailChannel"/>
+   <atom label="CSOS/SMSChannel"/>
+   <atom label="CSOS/Principal"/>
+   <atom label="CSOS/Person"/>
+   <atom label="CSOS/Viewer"/>
+   <atom label="CSOS/Institution"/>
+   <atom label="CSOS/ProcessStateMachine"/>
+   <atom label="CSOS/ProcessStateMachineState"/>
+   <atom label="CSOS/ProcessStateMachineAction"/>
+   <atom label="CSOS/ProcessStateMachineEvent"/>
+   <atom label="CSOS/ProcessStateMachineTransition"/>
+   <atom label="CSOS/ProcessStateMachineExecution"/>
+   <atom label="CSOS/channelID"/>
+   <atom label="CSOS/emailID"/>
+   <atom label="CSOS/secEmailID"/>
+   <atom label="CSOS/principalID"/>
+   <atom label="CSOS/role"/>
+   <atom label="CSOS/period"/>
+   <atom label="CSOS/InstitutionID"/>
+   <atom label="CSOS/stateMachineID"/>
+   <atom label="CSOS/stateID"/>
+   <atom label="CSOS/entryActionID"/>
+   <atom label="CSOS/exitActionID"/>
+   <atom label="CSOS/actionID"/>
+   <atom label="CSOS/actionStateMachineID"/>
+   <atom label="CSOS/eventID"/>
+   <atom label="CSOS/transitionID"/>
+   <atom label="CSOS/fromStateID"/>
+   <atom label="CSOS/toStateID"/>
+   <atom label="CSOS/processStateMachineExecutionID"/>
+   <atom label="CSOS/processStateMachineID"/>
+   <atom label="CSOS/currentStateID"/>
+   <atom label="CSOS/smsProvider"/>
+   <atom label="CSOS/telNo"/>
+   <atom label="CSOS/principalName"/>
+   <atom label="AssociationMappings/Declaration/No$0"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Class" ID="10" parentID="14" abstract="yes">
+   <atom label="CSOS/Channel"/>
+   <atom label="CSOS/EmailChannel"/>
+   <atom label="CSOS/SecEmailChannel"/>
+   <atom label="CSOS/SMSChannel"/>
+   <atom label="CSOS/Principal"/>
+   <atom label="CSOS/Person"/>
+   <atom label="CSOS/Viewer"/>
+   <atom label="CSOS/Institution"/>
+   <atom label="CSOS/ProcessStateMachine"/>
+   <atom label="CSOS/ProcessStateMachineState"/>
+   <atom label="CSOS/ProcessStateMachineAction"/>
+   <atom label="CSOS/ProcessStateMachineEvent"/>
+   <atom label="CSOS/ProcessStateMachineTransition"/>
+   <atom label="CSOS/ProcessStateMachineExecution"/>
+</sig>
+
+<field label="attrSet" ID="15" parentID="10">
+   <tuple> <atom label="CSOS/Channel"/> <atom label="CSOS/channelID"/> </tuple>
+   <tuple> <atom label="CSOS/EmailChannel"/> <atom label="CSOS/emailID"/> </tuple>
+   <tuple> <atom label="CSOS/SecEmailChannel"/> <atom label="CSOS/secEmailID"/> </tuple>
+   <tuple> <atom label="CSOS/SMSChannel"/> <atom label="CSOS/smsProvider"/> </tuple>
+   <tuple> <atom label="CSOS/SMSChannel"/> <atom label="CSOS/telNo"/> </tuple>
+   <tuple> <atom label="CSOS/Principal"/> <atom label="CSOS/principalID"/> </tuple>
+   <tuple> <atom label="CSOS/Principal"/> <atom label="CSOS/principalName"/> </tuple>
+   <tuple> <atom label="CSOS/Person"/> <atom label="CSOS/role"/> </tuple>
+   <tuple> <atom label="CSOS/Viewer"/> <atom label="CSOS/period"/> </tuple>
+   <tuple> <atom label="CSOS/Institution"/> <atom label="CSOS/InstitutionID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachine"/> <atom label="CSOS/stateMachineID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineState"/> <atom label="CSOS/stateID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineState"/> <atom label="CSOS/entryActionID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineState"/> <atom label="CSOS/exitActionID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineAction"/> <atom label="CSOS/actionID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineAction"/> <atom label="CSOS/actionStateMachineID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineEvent"/> <atom label="CSOS/eventID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineTransition"/> <atom label="CSOS/transitionID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineTransition"/> <atom label="CSOS/fromStateID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineTransition"/> <atom label="CSOS/toStateID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineExecution"/> <atom label="CSOS/processStateMachineExecutionID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineExecution"/> <atom label="CSOS/processStateMachineID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineExecution"/> <atom label="CSOS/currentStateID"/> </tuple>
+   <types> <type ID="10"/> <type ID="14"/> </types>
+</field>
+
+<field label="id" ID="16" parentID="10">
+   <tuple> <atom label="CSOS/Channel"/> <atom label="CSOS/channelID"/> </tuple>
+   <tuple> <atom label="CSOS/EmailChannel"/> <atom label="CSOS/channelID"/> </tuple>
+   <tuple> <atom label="CSOS/SecEmailChannel"/> <atom label="CSOS/channelID"/> </tuple>
+   <tuple> <atom label="CSOS/SMSChannel"/> <atom label="CSOS/channelID"/> </tuple>
+   <tuple> <atom label="CSOS/Principal"/> <atom label="CSOS/principalID"/> </tuple>
+   <tuple> <atom label="CSOS/Person"/> <atom label="CSOS/principalID"/> </tuple>
+   <tuple> <atom label="CSOS/Viewer"/> <atom label="CSOS/principalID"/> </tuple>
+   <tuple> <atom label="CSOS/Institution"/> <atom label="CSOS/principalID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachine"/> <atom label="CSOS/stateMachineID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineState"/> <atom label="CSOS/stateID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineAction"/> <atom label="CSOS/actionID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineEvent"/> <atom label="CSOS/eventID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineTransition"/> <atom label="CSOS/transitionID"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineExecution"/> <atom label="CSOS/processStateMachineExecutionID"/> </tuple>
+   <types> <type ID="10"/> <type ID="14"/> </types>
+</field>
+
+<field label="parent" ID="17" parentID="10">
+   <tuple> <atom label="CSOS/EmailChannel"/> <atom label="CSOS/Channel"/> </tuple>
+   <tuple> <atom label="CSOS/SecEmailChannel"/> <atom label="CSOS/EmailChannel"/> </tuple>
+   <tuple> <atom label="CSOS/SMSChannel"/> <atom label="CSOS/Channel"/> </tuple>
+   <tuple> <atom label="CSOS/Person"/> <atom label="CSOS/Principal"/> </tuple>
+   <tuple> <atom label="CSOS/Viewer"/> <atom label="CSOS/Person"/> </tuple>
+   <tuple> <atom label="CSOS/Institution"/> <atom label="CSOS/Principal"/> </tuple>
+   <types> <type ID="10"/> <type ID="10"/> </types>
+</field>
+
+<field label="isAbstract" ID="18" parentID="10">
+   <tuple> <atom label="CSOS/Channel"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/EmailChannel"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/SecEmailChannel"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/SMSChannel"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/Principal"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/Person"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/Viewer"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/Institution"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachine"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineState"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineAction"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineEvent"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineTransition"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <tuple> <atom label="CSOS/ProcessStateMachineExecution"/> <atom label="AssociationMappings/Declaration/No$0"/> </tuple>
+   <types> <type ID="10"/> <type ID="19"/> </types>
+</field>
+
+<sig label="CSOS/Channel" ID="20" parentID="10" one="yes">
+   <atom label="CSOS/Channel"/>
+</sig>
+
+<sig label="CSOS/EmailChannel" ID="21" parentID="10" one="yes">
+   <atom label="CSOS/EmailChannel"/>
+</sig>
+
+<sig label="CSOS/SecEmailChannel" ID="22" parentID="10" one="yes">
+   <atom label="CSOS/SecEmailChannel"/>
+</sig>
+
+<sig label="CSOS/SMSChannel" ID="23" parentID="10" one="yes">
+   <atom label="CSOS/SMSChannel"/>
+</sig>
+
+<sig label="CSOS/Principal" ID="24" parentID="10" one="yes">
+   <atom label="CSOS/Principal"/>
+</sig>
+
+<sig label="CSOS/Person" ID="25" parentID="10" one="yes">
+   <atom label="CSOS/Person"/>
+</sig>
+
+<sig label="CSOS/Viewer" ID="26" parentID="10" one="yes">
+   <atom label="CSOS/Viewer"/>
+</sig>
+
+<sig label="CSOS/Institution" ID="27" parentID="10" one="yes">
+   <atom label="CSOS/Institution"/>
+</sig>
+
+<sig label="CSOS/ProcessStateMachine" ID="28" parentID="10" one="yes">
+   <atom label="CSOS/ProcessStateMachine"/>
+</sig>
+
+<sig label="CSOS/ProcessStateMachineState" ID="29" parentID="10" one="yes">
+   <atom label="CSOS/ProcessStateMachineState"/>
+</sig>
+
+<sig label="CSOS/ProcessStateMachineAction" ID="30" parentID="10" one="yes">
+   <atom label="CSOS/ProcessStateMachineAction"/>
+</sig>
+
+<sig label="CSOS/ProcessStateMachineEvent" ID="31" parentID="10" one="yes">
+   <atom label="CSOS/ProcessStateMachineEvent"/>
+</sig>
+
+<sig label="CSOS/ProcessStateMachineTransition" ID="32" parentID="10" one="yes">
+   <atom label="CSOS/ProcessStateMachineTransition"/>
+</sig>
+
+<sig label="CSOS/ProcessStateMachineExecution" ID="33" parentID="10" one="yes">
+   <atom label="CSOS/ProcessStateMachineExecution"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Type" ID="34" parentID="14" abstract="yes">
+   <atom label="CSOS/channelID"/>
+   <atom label="CSOS/emailID"/>
+   <atom label="CSOS/secEmailID"/>
+   <atom label="CSOS/principalID"/>
+   <atom label="CSOS/role"/>
+   <atom label="CSOS/period"/>
+   <atom label="CSOS/InstitutionID"/>
+   <atom label="CSOS/stateMachineID"/>
+   <atom label="CSOS/stateID"/>
+   <atom label="CSOS/entryActionID"/>
+   <atom label="CSOS/exitActionID"/>
+   <atom label="CSOS/actionID"/>
+   <atom label="CSOS/actionStateMachineID"/>
+   <atom label="CSOS/eventID"/>
+   <atom label="CSOS/transitionID"/>
+   <atom label="CSOS/fromStateID"/>
+   <atom label="CSOS/toStateID"/>
+   <atom label="CSOS/processStateMachineExecutionID"/>
+   <atom label="CSOS/processStateMachineID"/>
+   <atom label="CSOS/currentStateID"/>
+   <atom label="CSOS/smsProvider"/>
+   <atom label="CSOS/telNo"/>
+   <atom label="CSOS/principalName"/>
+   <atom label="AssociationMappings/Declaration/No$0"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Integer" ID="35" parentID="34">
+   <atom label="CSOS/channelID"/>
+   <atom label="CSOS/emailID"/>
+   <atom label="CSOS/secEmailID"/>
+   <atom label="CSOS/principalID"/>
+   <atom label="CSOS/role"/>
+   <atom label="CSOS/period"/>
+   <atom label="CSOS/InstitutionID"/>
+   <atom label="CSOS/stateMachineID"/>
+   <atom label="CSOS/stateID"/>
+   <atom label="CSOS/entryActionID"/>
+   <atom label="CSOS/exitActionID"/>
+   <atom label="CSOS/actionID"/>
+   <atom label="CSOS/actionStateMachineID"/>
+   <atom label="CSOS/eventID"/>
+   <atom label="CSOS/transitionID"/>
+   <atom label="CSOS/fromStateID"/>
+   <atom label="CSOS/toStateID"/>
+   <atom label="CSOS/processStateMachineExecutionID"/>
+   <atom label="CSOS/processStateMachineID"/>
+   <atom label="CSOS/currentStateID"/>
+</sig>
+
+<sig label="CSOS/channelID" ID="36" parentID="35" one="yes">
+   <atom label="CSOS/channelID"/>
+</sig>
+
+<sig label="CSOS/emailID" ID="37" parentID="35" one="yes">
+   <atom label="CSOS/emailID"/>
+</sig>
+
+<sig label="CSOS/secEmailID" ID="38" parentID="35" one="yes">
+   <atom label="CSOS/secEmailID"/>
+</sig>
+
+<sig label="CSOS/principalID" ID="39" parentID="35" one="yes">
+   <atom label="CSOS/principalID"/>
+</sig>
+
+<sig label="CSOS/role" ID="40" parentID="35" one="yes">
+   <atom label="CSOS/role"/>
+</sig>
+
+<sig label="CSOS/period" ID="41" parentID="35" one="yes">
+   <atom label="CSOS/period"/>
+</sig>
+
+<sig label="CSOS/InstitutionID" ID="42" parentID="35" one="yes">
+   <atom label="CSOS/InstitutionID"/>
+</sig>
+
+<sig label="CSOS/stateMachineID" ID="43" parentID="35" one="yes">
+   <atom label="CSOS/stateMachineID"/>
+</sig>
+
+<sig label="CSOS/stateID" ID="44" parentID="35" one="yes">
+   <atom label="CSOS/stateID"/>
+</sig>
+
+<sig label="CSOS/entryActionID" ID="45" parentID="35" one="yes">
+   <atom label="CSOS/entryActionID"/>
+</sig>
+
+<sig label="CSOS/exitActionID" ID="46" parentID="35" one="yes">
+   <atom label="CSOS/exitActionID"/>
+</sig>
+
+<sig label="CSOS/actionID" ID="47" parentID="35" one="yes">
+   <atom label="CSOS/actionID"/>
+</sig>
+
+<sig label="CSOS/actionStateMachineID" ID="48" parentID="35" one="yes">
+   <atom label="CSOS/actionStateMachineID"/>
+</sig>
+
+<sig label="CSOS/eventID" ID="49" parentID="35" one="yes">
+   <atom label="CSOS/eventID"/>
+</sig>
+
+<sig label="CSOS/transitionID" ID="50" parentID="35" one="yes">
+   <atom label="CSOS/transitionID"/>
+</sig>
+
+<sig label="CSOS/fromStateID" ID="51" parentID="35" one="yes">
+   <atom label="CSOS/fromStateID"/>
+</sig>
+
+<sig label="CSOS/toStateID" ID="52" parentID="35" one="yes">
+   <atom label="CSOS/toStateID"/>
+</sig>
+
+<sig label="CSOS/processStateMachineExecutionID" ID="53" parentID="35" one="yes">
+   <atom label="CSOS/processStateMachineExecutionID"/>
+</sig>
+
+<sig label="CSOS/processStateMachineID" ID="54" parentID="35" one="yes">
+   <atom label="CSOS/processStateMachineID"/>
+</sig>
+
+<sig label="CSOS/currentStateID" ID="55" parentID="35" one="yes">
+   <atom label="CSOS/currentStateID"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Real" ID="56" parentID="34">
+</sig>
+
+<sig label="AssociationMappings/Declaration/string" ID="57" parentID="34">
+   <atom label="CSOS/smsProvider"/>
+   <atom label="CSOS/telNo"/>
+   <atom label="CSOS/principalName"/>
+</sig>
+
+<sig label="CSOS/smsProvider" ID="58" parentID="57" one="yes">
+   <atom label="CSOS/smsProvider"/>
+</sig>
+
+<sig label="CSOS/telNo" ID="59" parentID="57" one="yes">
+   <atom label="CSOS/telNo"/>
+</sig>
+
+<sig label="CSOS/principalName" ID="60" parentID="57" one="yes">
+   <atom label="CSOS/principalName"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Bool" ID="19" parentID="34">
+   <atom label="AssociationMappings/Declaration/No$0"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Yes" ID="61" parentID="19">
+</sig>
+
+<sig label="AssociationMappings/Declaration/No" ID="62" parentID="19">
+   <atom label="AssociationMappings/Declaration/No$0"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/DType" ID="63" parentID="34">
+</sig>
+
+<sig label="AssociationMappings/Declaration/Longblob" ID="64" parentID="34">
+</sig>
+
+<sig label="AssociationMappings/Declaration/Time" ID="65" parentID="34">
+</sig>
+
+<sig label="AssociationMappings/Declaration/Association" ID="11" parentID="13" abstract="yes">
+   <atom label="CSOS/PrincipalProxy"/>
+   <atom label="CSOS/StateMachineStates"/>
+   <atom label="CSOS/StateMachineEvents"/>
+   <atom label="CSOS/StateMachineTransitions"/>
+</sig>
+
+<field label="src" ID="66" parentID="11">
+   <tuple> <atom label="CSOS/PrincipalProxy"/> <atom label="CSOS/Principal"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineStates"/> <atom label="CSOS/ProcessStateMachine"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineEvents"/> <atom label="CSOS/ProcessStateMachine"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineTransitions"/> <atom label="CSOS/ProcessStateMachine"/> </tuple>
+   <types> <type ID="11"/> <type ID="10"/> </types>
+</field>
+
+<field label="dst" ID="67" parentID="11">
+   <tuple> <atom label="CSOS/PrincipalProxy"/> <atom label="CSOS/Channel"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineStates"/> <atom label="CSOS/ProcessStateMachineState"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineEvents"/> <atom label="CSOS/ProcessStateMachineEvent"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineTransitions"/> <atom label="CSOS/ProcessStateMachineTransition"/> </tuple>
+   <types> <type ID="11"/> <type ID="10"/> </types>
+</field>
+
+<field label="src_multiplicity" ID="68" parentID="11">
+   <tuple> <atom label="CSOS/PrincipalProxy"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineStates"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineEvents"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineTransitions"/> <atom label="AssociationMappings/Declaration/ONE"/> </tuple>
+   <types> <type ID="11"/> <type ID="69"/> </types>
+</field>
+
+<field label="dst_multiplicity" ID="70" parentID="11">
+   <tuple> <atom label="CSOS/PrincipalProxy"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineStates"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineEvents"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <tuple> <atom label="CSOS/StateMachineTransitions"/> <atom label="AssociationMappings/Declaration/MANY"/> </tuple>
+   <types> <type ID="11"/> <type ID="69"/> </types>
+</field>
+
+<sig label="CSOS/PrincipalProxy" ID="71" parentID="11" one="yes">
+   <atom label="CSOS/PrincipalProxy"/>
+</sig>
+
+<sig label="CSOS/StateMachineStates" ID="72" parentID="11" one="yes">
+   <atom label="CSOS/StateMachineStates"/>
+</sig>
+
+<sig label="CSOS/StateMachineEvents" ID="73" parentID="11" one="yes">
+   <atom label="CSOS/StateMachineEvents"/>
+</sig>
+
+<sig label="CSOS/StateMachineTransitions" ID="74" parentID="11" one="yes">
+   <atom label="CSOS/StateMachineTransitions"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Multiplicity_State" ID="69" parentID="0" abstract="yes">
+   <atom label="AssociationMappings/Declaration/ONE"/>
+   <atom label="AssociationMappings/Declaration/MANY"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/ONE" ID="75" parentID="69" one="yes">
+   <atom label="AssociationMappings/Declaration/ONE"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/MANY" ID="76" parentID="69" one="yes">
+   <atom label="AssociationMappings/Declaration/MANY"/>
+</sig>
+
+<sig label="AssociationMappings/Declaration/Strategy" ID="77" parentID="0" abstract="yes">
+   <atom label="ORMStrategies/UnionSubclassStrategy"/>
+   <atom label="ORMStrategies/JoinedSubclassStrategy"/>
+   <atom label="ORMStrategies/UnionSuperclassStrategy"/>
+   <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/>
+   <atom label="AssociationMappings/OwnAssociationTableStrategy"/>
+   <atom label="AssociationMappings/MergingOneTableStrategy"/>
+</sig>
+
+<field label="assignees" ID="78" parentID="77">
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="CSOS/Channel"/> </tuple>
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="CSOS/SecEmailChannel"/> </tuple>
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="CSOS/Principal"/> </tuple>
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="CSOS/Person"/> </tuple>
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="CSOS/Viewer"/> </tuple>
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="CSOS/Institution"/> </tuple>
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="CSOS/ProcessStateMachine"/> </tuple>
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="CSOS/ProcessStateMachineAction"/> </tuple>
+   <tuple> <atom label="ORMStrategies/UnionSubclassStrategy"/> <atom label="CSOS/ProcessStateMachineExecution"/> </tuple>
+   <tuple> <atom label="ORMStrategies/JoinedSubclassStrategy"/> <atom label="CSOS/EmailChannel"/> </tuple>
+   <tuple> <atom label="ORMStrategies/JoinedSubclassStrategy"/> <atom label="CSOS/SMSChannel"/> </tuple>
+   <tuple> <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/> <atom label="CSOS/StateMachineStates"/> </tuple>
+   <tuple> <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/> <atom label="CSOS/StateMachineEvents"/> </tuple>
+   <tuple> <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/> <atom label="CSOS/StateMachineTransitions"/> </tuple>
+   <tuple> <atom label="AssociationMappings/OwnAssociationTableStrategy"/> <atom label="CSOS/PrincipalProxy"/> </tuple>
+   <types> <type ID="77"/> <type ID="10"/> </types>
+   <types> <type ID="77"/> <type ID="11"/> </types>
+</field>
+
+<sig label="ORMStrategies/UnionSubclassStrategy" ID="79" parentID="77" one="yes">
+   <atom label="ORMStrategies/UnionSubclassStrategy"/>
+</sig>
+
+<sig label="ORMStrategies/JoinedSubclassStrategy" ID="80" parentID="77" one="yes">
+   <atom label="ORMStrategies/JoinedSubclassStrategy"/>
+</sig>
+
+<sig label="ORMStrategies/UnionSuperclassStrategy" ID="81" parentID="77" one="yes">
+   <atom label="ORMStrategies/UnionSuperclassStrategy"/>
+</sig>
+
+<sig label="AssociationMappings/ForeignKeyEmbeddingStrategy" ID="82" parentID="77" one="yes">
+   <atom label="AssociationMappings/ForeignKeyEmbeddingStrategy"/>
+</sig>
+
+<sig label="AssociationMappings/OwnAssociationTableStrategy" ID="83" parentID="77" one="yes">
+   <atom label="AssociationMappings/OwnAssociationTableStrategy"/>
+</sig>
+
+<sig label="AssociationMappings/MergingOneTableStrategy" ID="84" parentID="77" one="yes">
+   <atom label="AssociationMappings/MergingOneTableStrategy"/>
+</sig>
+
+<sig label="AssociationMappings/AssociationMappingStrategies" ID="85" parentID="0" one="yes">
+   <atom label="AssociationMappings/AssociationMappingStrategies"/>
+</sig>
+
+<field label="FKE" ID="86" parentID="85">
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="CSOS/StateMachineStates"/> </tuple>
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="CSOS/StateMachineEvents"/> </tuple>
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="CSOS/StateMachineTransitions"/> </tuple>
+   <types> <type ID="85"/> <type ID="11"/> </types>
+</field>
+
+<field label="OAT" ID="87" parentID="85">
+   <tuple> <atom label="AssociationMappings/AssociationMappingStrategies"/> <atom label="CSOS/PrincipalProxy"/> </tuple>
+   <types> <type ID="85"/> <type ID="11"/> </types>
+</field>
+
+<field label="MOT" ID="88" parentID="85">
+   <types> <type ID="85"/> <type ID="11"/> </types>
+</field>
+
+</instance>
+
+</alloy>

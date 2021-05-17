@@ -1,0 +1,583 @@
+Computing Satisfying Solutions ...
+Current Time: 2021-05-14 18:05:35.805
+-----------------------------------------
+Solution #1 has been generated.
+Eq.Class #1
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 2
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:1)= 7
+
+NCT(BadgeAwarded)= 3
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 1
+NCT(CampingTrip)= 2
+Overall_NCT(solution:1)= 9
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 2
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:1)= 7
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 0
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:1)= 0
+Overall_NIC(solution:1)= 10
+Overall_NFK(solution:1)= 5
+Eq.Classes: 1 / 1
+-----------------------------------------
+-----------------------------------------
+Solution #2 has been generated.
+Eq.Class #2
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 2
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:2)= 7
+
+NCT(BadgeAwarded)= 3
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 2
+NCT(CampingTrip)= 2
+Overall_NCT(solution:2)= 10
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 1
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:2)= 6
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 0
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:2)= 0
+Overall_NIC(solution:2)= 10
+Overall_NFK(solution:2)= 6
+Eq.Classes: 2 / 2
+-----------------------------------------
+-----------------------------------------
+Solution #3 has been generated.
+Eq.Class #2
+-----------------------------------------
+Solution #4 has been generated.
+Eq.Class #1
+-----------------------------------------
+Solution #5 has been generated.
+Eq.Class #3
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 2
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:5)= 7
+
+NCT(BadgeAwarded)= 2
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 2
+NCT(CampingTrip)= 2
+Overall_NCT(solution:5)= 9
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 1
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:5)= 6
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 0
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:5)= 0
+Overall_NIC(solution:5)= 9
+Overall_NFK(solution:5)= 7
+Eq.Classes: 3 / 5
+-----------------------------------------
+-----------------------------------------
+Solution #6 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #7 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #8 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #9 has been generated.
+Eq.Class #4
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 1
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:9)= 6
+
+NCT(BadgeAwarded)= 3
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 1
+NCT(CampingTrip)= 2
+Overall_NCT(solution:9)= 9
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 1
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:9)= 6
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 1
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:9)= 1
+Overall_NIC(solution:9)= 9
+Overall_NFK(solution:9)= 5
+Eq.Classes: 4 / 9
+-----------------------------------------
+-----------------------------------------
+Solution #10 has been generated.
+Eq.Class #4
+-----------------------------------------
+Solution #11 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #12 has been generated.
+Eq.Class #5
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 1
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:12)= 6
+
+NCT(BadgeAwarded)= 2
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 1
+NCT(CampingTrip)= 2
+Overall_NCT(solution:12)= 8
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 1
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:12)= 6
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 1
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:12)= 1
+Overall_NIC(solution:12)= 8
+Overall_NFK(solution:12)= 6
+Eq.Classes: 5 / 12
+-----------------------------------------
+-----------------------------------------
+Solution #13 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #14 has been generated.
+Eq.Class #3
+-----------------------------------------
+Solution #15 has been generated.
+Eq.Class #6
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 2
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:15)= 7
+
+NCT(BadgeAwarded)= 2
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 1
+NCT(CampingTrip)= 2
+Overall_NCT(solution:15)= 8
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 2
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:15)= 7
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 0
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:15)= 0
+Overall_NIC(solution:15)= 9
+Overall_NFK(solution:15)= 6
+Eq.Classes: 6 / 15
+-----------------------------------------
+-----------------------------------------
+Solution #16 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #17 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #18 has been generated.
+Eq.Class #7
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 1
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:18)= 6
+
+NCT(BadgeAwarded)= 1
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 1
+NCT(CampingTrip)= 2
+Overall_NCT(solution:18)= 7
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 1
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:18)= 6
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 1
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:18)= 1
+Overall_NIC(solution:18)= 7
+Overall_NFK(solution:18)= 7
+Eq.Classes: 7 / 18
+-----------------------------------------
+-----------------------------------------
+Solution #19 has been generated.
+Eq.Class #8
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 2
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:19)= 7
+
+NCT(BadgeAwarded)= 1
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 2
+NCT(CampingTrip)= 2
+Overall_NCT(solution:19)= 8
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 1
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:19)= 6
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 0
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:19)= 0
+Overall_NIC(solution:19)= 8
+Overall_NFK(solution:19)= 8
+Eq.Classes: 8 / 19
+-----------------------------------------
+-----------------------------------------
+Solution #20 has been generated.
+Eq.Class #9
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 2
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:20)= 7
+
+NCT(BadgeAwarded)= 1
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 1
+NCT(CampingTrip)= 2
+Overall_NCT(solution:20)= 7
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 2
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:20)= 7
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 0
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:20)= 0
+Overall_NIC(solution:20)= 8
+Overall_NFK(solution:20)= 7
+Eq.Classes: 9 / 20
+-----------------------------------------
+-----------------------------------------
+Solution #21 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #22 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #23 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #24 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #25 has been generated.
+Eq.Class #6
+-----------------------------------------
+Solution #26 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #27 has been generated.
+Eq.Class #8
+-----------------------------------------
+Solution #28 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #29 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #30 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #31 has been generated.
+Eq.Class #5
+-----------------------------------------
+Solution #32 has been generated.
+Eq.Class #9
+-----------------------------------------
+Solution #33 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #34 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #35 has been generated.
+Eq.Class #7
+-----------------------------------------
+Solution #36 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #37 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #38 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #39 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #40 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #41 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #42 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #43 has been generated.
+Eq.Class #10
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 2
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:43)= 7
+
+NCT(BadgeAwarded)= 1
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 2
+NCT(CampingTrip)= 1
+Overall_NCT(solution:43)= 7
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 1
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:43)= 6
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 0
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:43)= 0
+Overall_NIC(solution:43)= 7
+Overall_NFK(solution:43)= 9
+Eq.Classes: 10 / 43
+-----------------------------------------
+-----------------------------------------
+Solution #44 has been generated.
+Eq.Class #10
+-----------------------------------------
+Solution #45 has been generated.
+Eq.Class #11
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 1
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:45)= 6
+
+NCT(BadgeAwarded)= 1
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 1
+NCT(CampingTrip)= 1
+Overall_NCT(solution:45)= 6
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 1
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:45)= 6
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 1
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:45)= 1
+Overall_NIC(solution:45)= 6
+Overall_NFK(solution:45)= 8
+Eq.Classes: 11 / 45
+-----------------------------------------
+-----------------------------------------
+Solution #46 has been generated.
+Eq.Class #12
+
+TATI(BadgeAwarded)= 1
+TATI(CampSite)= 1
+TATI(BadgeSpecification)= 1
+TATI(Scout)= 2
+TATI(WealthyScout)= 1
+TATI(CampingTrip)= 1
+Overall_TATI(solution:46)= 7
+
+NCT(BadgeAwarded)= 1
+NCT(CampSite)= 1
+NCT(BadgeSpecification)= 1
+NCT(Scout)= 1
+NCT(WealthyScout)= 1
+NCT(CampingTrip)= 1
+Overall_NCT(solution:46)= 6
+
+NCRF(BadgeAwarded)= 1
+NCRF(CampSite)= 1
+NCRF(BadgeSpecification)= 1
+NCRF(Scout)= 2
+NCRF(WealthyScout)= 1
+NCRF(CampingTrip)= 1
+Overall_NCRF(solution:46)= 7
+
+ANV(BadgeAwarded)= 0
+ANV(CampSite)= 0
+ANV(BadgeSpecification)= 0
+ANV(Scout)= 0
+ANV(WealthyScout)= 0
+ANV(CampingTrip)= 0
+Overall_ANV(solution:46)= 0
+Overall_NIC(solution:46)= 7
+Overall_NFK(solution:46)= 8
+Eq.Classes: 12 / 46
+-----------------------------------------
+-----------------------------------------
+Solution #47 has been generated.
+Eq.Class #12
+-----------------------------------------
+Solution #48 has been generated.
+Eq.Class #11
+
+-----------------------------------------
+# Eq.Classes: 12 / 49
+Current Time: 2021-05-14 18:06:23.477
+No more Satisfying solutions

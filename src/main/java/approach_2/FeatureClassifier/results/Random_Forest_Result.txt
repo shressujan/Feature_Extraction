@@ -1,0 +1,52 @@
+##   Running Random Forest Classifier   ##
+Fitting 5 folds for each of 18 candidates, totalling 90 fits
+Best param: {'max_depth': 6, 'max_features': 'log2', 'n_estimators': 500}
+Best score: 0.7612263771778561
+Accuracy score: 0.7602106423366604
+ROC_AUC score: 0.8332209753836878
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[6665 1491]
+ [2425 5750]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.73      0.82      0.77      8156
+           1       0.79      0.70      0.75      8175
+
+    accuracy                           0.76     16331
+   macro avg       0.76      0.76      0.76     16331
+weighted avg       0.76      0.76      0.76     16331
+
+
+ Execution time: 87.66126879
+# Standardizing the Training and Testing feature sets....: Completed
+
+##   Running Random Forest Classifier   ##
+Fitting 5 folds for each of 18 candidates, totalling 90 fits
+Best param: {'max_depth': 6, 'max_features': 'auto', 'n_estimators': 500}
+Best score: 0.768286241808017
+Accuracy score: 0.761067907660278
+ROC_AUC score: 0.8169435383117887
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[6391 1765]
+ [2137 6038]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.75      0.78      0.77      8156
+           1       0.77      0.74      0.76      8175
+
+    accuracy                           0.76     16331
+   macro avg       0.76      0.76      0.76     16331
+weighted avg       0.76      0.76      0.76     16331
+
+
+ Execution time: 70.91524402
+
+Process finished with exit code 0

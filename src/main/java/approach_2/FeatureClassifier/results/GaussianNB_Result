@@ -1,0 +1,54 @@
+##   Running GaussianNB Classifier   ##
+Fitting 5 folds for each of 6 candidates, totalling 30 fits
+[CV 1/5] END ............................var_smoothing=1e-09; total time=   0.0s
+[CV 2/5] END ............................var_smoothing=1e-09; total time=   0.0s
+[CV 3/5] END ............................var_smoothing=1e-09; total time=   0.0s
+[CV 4/5] END ............................var_smoothing=1e-09; total time=   0.0s
+[CV 1/5] END ............................var_smoothing=1e-08; total time=   0.0s
+[CV 5/5] END ............................var_smoothing=1e-09; total time=   0.0s
+[CV 2/5] END ............................var_smoothing=1e-08; total time=   0.0s
+[CV 3/5] END ............................var_smoothing=1e-08; total time=   0.0s
+[CV 3/5] END ............................var_smoothing=1e-07; total time=   0.0s
+[CV 5/5] END ............................var_smoothing=1e-08; total time=   0.0s
+[CV 4/5] END ............................var_smoothing=1e-08; total time=   0.0s
+[CV 2/5] END ............................var_smoothing=1e-07; total time=   0.0s
+[CV 1/5] END ............................var_smoothing=1e-07; total time=   0.0s
+[CV 4/5] END ............................var_smoothing=1e-07; total time=   0.0s
+[CV 5/5] END ............................var_smoothing=1e-07; total time=   0.0s
+[CV 1/5] END ............................var_smoothing=1e-06; total time=   0.0s
+[CV 2/5] END ............................var_smoothing=1e-06; total time=   0.0s
+[CV 3/5] END ............................var_smoothing=1e-06; total time=   0.0s
+[CV 4/5] END ............................var_smoothing=1e-06; total time=   0.0s
+[CV 5/5] END ............................var_smoothing=1e-06; total time=   0.0s
+[CV 1/5] END ............................var_smoothing=1e-05; total time=   0.0s
+[CV 2/5] END ............................var_smoothing=1e-05; total time=   0.0s
+[CV 3/5] END ............................var_smoothing=1e-05; total time=   0.0s
+[CV 4/5] END ............................var_smoothing=1e-05; total time=   0.0s
+[CV 5/5] END ............................var_smoothing=1e-05; total time=   0.0s
+[CV 1/5] END ...........................var_smoothing=0.0001; total time=   0.0s
+[CV 2/5] END ...........................var_smoothing=0.0001; total time=   0.0s
+[CV 3/5] END ...........................var_smoothing=0.0001; total time=   0.0s
+[CV 4/5] END ...........................var_smoothing=0.0001; total time=   0.0s
+[CV 5/5] END ...........................var_smoothing=0.0001; total time=   0.0s
+Best param: {'var_smoothing': 0.0001}
+Best score: 0.4878231760795907
+Accuracy score: 0.6412344620660094
+ROC_AUC score: 0.6465675012179295
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[7731  407]
+ [5452 2741]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.59      0.95      0.73      8138
+           1       0.87      0.33      0.48      8193
+
+    accuracy                           0.64     16331
+   macro avg       0.73      0.64      0.60     16331
+weighted avg       0.73      0.64      0.60     16331
+
+
+ Execution time: 1.624732597

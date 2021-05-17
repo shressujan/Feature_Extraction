@@ -1,0 +1,433 @@
+/usr/bin/python3 /Users/sujanshrestha/IdeaProjects/Feature_Extraction/src/main/java/approach_2/FeatureClassifier/Classifier.py
+
+#Reading input csv file: /Users/sujanshrestha/IdeaProjects/Feature_Extraction/src/main/java/approach_2/feature_csv_files/union/features.csv ....: Completed
+
+#Before resampling
+0    27217
+1      179
+Name: paretoOptimal, dtype: int64
+0    27217
+1    27217
+Name: paretoOptimal, dtype: int64
+                          object  hasId  attributes  parents  children  srcOneToRelation  srcManyToRelation  dstToOneRelation  dstToManyRelation          mappingStrategy    parentMappingStrategy                                       associations  paretoOptimal
+0                           User      1           2        0         0                 3                  0                 0                  1    UnionSubclassStrategy                     none  ForeignKeyEmbeddingStrategy+ForeignKeyEmbeddin...              1
+1                         Person      1           1        1         1                 0                  0                 0                  0  UnionSuperclassStrategy  UnionSuperclassStrategy                                               none              1
+2                      Developer      1           1        1         0                 0                  0                 0                  0    UnionSubclassStrategy    UnionSubclassStrategy                                               none              1
+3                   EmailChannel      1           1        1         1                 0                  0                 0                  0  UnionSuperclassStrategy  UnionSuperclassStrategy                                               none              1
+4                SecEmailChannel      1           1        2         0                 0                  0                 0                  0    UnionSubclassStrategy   JoinedSubclassStrategy                                               none              1
+...                          ...    ...         ...      ...       ...               ...                ...               ...                ...                      ...                      ...                                                ...            ...
+54429                      Group      1           2        0         0                 1                  1                 0                  0    UnionSubclassStrategy                     none  ForeignKeyEmbeddingStrategy+OwnAssociationTabl...              1
+54430  ProcessStateMachineAction      1           2        0         0                 0                  0                 0                  0    UnionSubclassStrategy                     none                                               none              0
+54431   ProcessStateMachineEvent      1           1        0         0                 0                  0                 0                  1    UnionSubclassStrategy                     none                        OwnAssociationTableStrategy              0
+54432  ProcessStateMachineAction      1           2        0         0                 0                  0                 0                  0    UnionSubclassStrategy                     none                                               none              0
+54433            SecEmailChannel      1           1        2         0                 0                  0                 0                  0   JoinedSubclassStrategy  UnionSuperclassStrategy                                               none              0
+
+[54434 rows x 13 columns]
+
+#Checking for any null values in Dataset....: Completed
+
+# Getting Class distribution for : paretoOptimal ....:Completed
+
+               object  hasId  attributes  parents  children  srcOneToRelation  srcManyToRelation  dstToOneRelation  dstToManyRelation  mappingStrategy  parentMappingStrategy  associations
+paretoOptimal
+0               27217  27217       27217    27217     27217             27217              27217             27217              27217            27217                  27217         27217
+1               27217  27217       27217    27217     27217             27217              27217             27217              27217            27217                  27217         27217
+
+# Getting Class distribution for : mappingStrategy ....:Completed
+
+                         object  hasId  attributes  parents  children  srcOneToRelation  srcManyToRelation  dstToOneRelation  dstToManyRelation  parentMappingStrategy  associations  paretoOptimal
+mappingStrategy
+JoinedSubclassStrategy     5246   5246        5246     5246      5246              5246               5246              5246               5246                   5246          5246           5246
+UnionSubclassStrategy     34328  34328       34328    34328     34328             34328              34328             34328              34328                  34328         34328          34328
+UnionSuperclassStrategy   14860  14860       14860    14860     14860             14860              14860             14860              14860                  14860         14860          14860
+
+# Getting Class distribution for : associations ....:Completed
+
+                                                    object  hasId  attributes  parents  children  srcOneToRelation  srcManyToRelation  dstToOneRelation  dstToManyRelation  mappingStrategy  parentMappingStrategy  paretoOptimal
+associations
+ForeignKeyEmbeddingStrategy                           3541   3541        3541     3541      3541              3541               3541              3541               3541             3541                   3541           3541
+ForeignKeyEmbeddingStrategy+ForeignKeyEmbedding...     447    447         447      447       447               447                447               447                447              447                    447            447
+ForeignKeyEmbeddingStrategy+ForeignKeyEmbedding...     915    915         915      915       915               915                915               915                915              915                    915            915
+ForeignKeyEmbeddingStrategy+ForeignKeyEmbedding...    1927   1927        1927     1927      1927              1927               1927              1927               1927             1927                   1927           1927
+ForeignKeyEmbeddingStrategy+ForeignKeyEmbedding...    1387   1387        1387     1387      1387              1387               1387              1387               1387             1387                   1387           1387
+ForeignKeyEmbeddingStrategy+OwnAssociationTable...    2253   2253        2253     2253      2253              2253               2253              2253               2253             2253                   2253           2253
+ForeignKeyEmbeddingStrategy+OwnAssociationTable...    1378   1378        1378     1378      1378              1378               1378              1378               1378             1378                   1378           1378
+ForeignKeyEmbeddingStrategy+OwnAssociationTable...     371    371         371      371       371               371                371               371                371              371                    371            371
+OwnAssociationTableStrategy                          11680  11680       11680    11680     11680             11680              11680             11680              11680            11680                  11680          11680
+OwnAssociationTableStrategy+OwnAssociationTable...    1430   1430        1430     1430      1430              1430               1430              1430               1430             1430                   1430           1430
+OwnAssociationTableStrategy+OwnAssociationTable...     485    485         485      485       485               485                485               485                485              485                    485            485
+OwnAssociationTableStrategy+OwnAssociationTable...      24     24          24       24        24                24                 24                24                 24               24                     24             24
+none                                                 28596  28596       28596    28596     28596             28596              28596             28596              28596            28596                  28596          28596
+
+# Encoding text labels in the DataFrame with numerical values....: Completed
+
+# Printing Correlation of all features with {paretoOptimal}....: Completed
+paretoOptimal            1.000000
+srcManyToRelation        0.249373
+srcOneToRelation         0.179628
+associations             0.143726
+attributes               0.063071
+dstToManyRelation        0.061631
+parentMappingStrategy   -0.038843
+mappingStrategy         -0.059936
+children                -0.066396
+parents                 -0.133354
+hasId                         NaN
+dstToOneRelation              NaN
+Name: paretoOptimal, dtype: float64
+
+# Getting Input and output features for given DataFrame....: Completed
+
+X_train shape: (38103, 8)
+
+#Dimensionality reduction technique PCA....: Applied
+# Standardizing the Training and Testing feature sets....: Completed
+
+##   Running KNeighborClassifier   ##
+# Range of Neighbors: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+Best param: {'n_neighbors': 29, 'p': 1, 'weights': 'distance'}
+Best score: 0.7517579816775573
+Accuracy score: 0.7672524646378054
+ROC_AUC score: 0.8355129666317354
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[6612 1514]
+ [2287 5918]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.74      0.81      0.78      8126
+           1       0.80      0.72      0.76      8205
+
+    accuracy                           0.77     16331
+   macro avg       0.77      0.77      0.77     16331
+weighted avg       0.77      0.77      0.77     16331
+
+# Standardizing the Training and Testing feature sets....: Completed
+
+##   Running KNeighborClassifier   ##
+# Range of Neighbors: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+Best param: {'n_neighbors': 27, 'p': 1, 'weights': 'distance'}
+Best score: 0.7553244379767705
+Accuracy score: 0.7593533770130427
+ROC_AUC score: 0.8342513246951615
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[7031 1095]
+ [2835 5370]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.71      0.87      0.78      8126
+           1       0.83      0.65      0.73      8205
+
+    accuracy                           0.76     16331
+   macro avg       0.77      0.76      0.76     16331
+weighted avg       0.77      0.76      0.76     16331
+
+
+##   Running MultinomialNB Classifier   ##
+Fitting 5 folds for each of 9 candidates, totalling 45 fits
+[CV 1/5] END ....................................alpha=1e-06; total time=   0.0s
+[CV 2/5] END ....................................alpha=1e-06; total time=   0.0s
+[CV 3/5] END ....................................alpha=1e-06; total time=   0.0s
+[CV 4/5] END ....................................alpha=1e-06; total time=   0.0s
+[CV 5/5] END ....................................alpha=1e-06; total time=   0.0s
+[CV 1/5] END ....................................alpha=1e-05; total time=   0.0s
+[CV 2/5] END ....................................alpha=1e-05; total time=   0.0s
+[CV 3/5] END ....................................alpha=1e-05; total time=   0.0s
+[CV 4/5] END ....................................alpha=1e-05; total time=   0.0s
+[CV 5/5] END ....................................alpha=1e-05; total time=   0.0s
+[CV 1/5] END ...................................alpha=0.0001; total time=   0.0s
+[CV 2/5] END ...................................alpha=0.0001; total time=   0.0s
+[CV 3/5] END ...................................alpha=0.0001; total time=   0.0s
+[CV 4/5] END ...................................alpha=0.0001; total time=   0.0s
+[CV 5/5] END ...................................alpha=0.0001; total time=   0.0s
+[CV 1/5] END ....................................alpha=0.001; total time=   0.0s
+[CV 2/5] END ....................................alpha=0.001; total time=   0.0s
+[CV 3/5] END ....................................alpha=0.001; total time=   0.0s
+[CV 4/5] END ....................................alpha=0.001; total time=   0.0s
+[CV 5/5] END ....................................alpha=0.001; total time=   0.0s
+[CV 1/5] END .....................................alpha=0.01; total time=   0.0s
+[CV 2/5] END .....................................alpha=0.01; total time=   0.0s
+[CV 3/5] END .....................................alpha=0.01; total time=   0.0s
+[CV 4/5] END .....................................alpha=0.01; total time=   0.0s
+[CV 5/5] END .....................................alpha=0.01; total time=   0.0s
+[CV 1/5] END ......................................alpha=0.1; total time=   0.0s
+[CV 3/5] END ......................................alpha=0.1; total time=   0.0s
+[CV 2/5] END ......................................alpha=0.1; total time=   0.0s
+[CV 4/5] END ......................................alpha=0.1; total time=   0.0s
+[CV 5/5] END ......................................alpha=0.1; total time=   0.0s
+[CV 1/5] END ......................................alpha=1.0; total time=   0.0s
+[CV 2/5] END ......................................alpha=1.0; total time=   0.0s
+[CV 3/5] END ......................................alpha=1.0; total time=   0.0s
+[CV 4/5] END ......................................alpha=1.0; total time=   0.0s
+[CV 5/5] END ......................................alpha=1.0; total time=   0.0s
+[CV 1/5] END ......................................alpha=1.5; total time=   0.0s
+[CV 2/5] END ......................................alpha=1.5; total time=   0.0s
+[CV 3/5] END ......................................alpha=1.5; total time=   0.0s
+[CV 4/5] END ......................................alpha=1.5; total time=   0.0s
+[CV 5/5] END ......................................alpha=1.5; total time=   0.0s
+[CV 1/5] END ......................................alpha=2.0; total time=   0.0s
+[CV 2/5] END ......................................alpha=2.0; total time=   0.0s
+[CV 3/5] END ......................................alpha=2.0; total time=   0.0s
+[CV 4/5] END ......................................alpha=2.0; total time=   0.0s
+[CV 5/5] END ......................................alpha=2.0; total time=   0.0s
+Best param: {'alpha': 1e-06}
+Best score: 0.5680034667706224
+Accuracy score: 0.5676933439470945
+ROC_AUC score: 0.6129837148998342
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[4524 3602]
+ [3458 4747]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.57      0.56      0.56      8126
+           1       0.57      0.58      0.57      8205
+
+    accuracy                           0.57     16331
+   macro avg       0.57      0.57      0.57     16331
+weighted avg       0.57      0.57      0.57     16331
+
+# Standardizing the Training and Testing feature sets....: Completed
+
+##   Running LinearSV Classifier   ##
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+Best param: {'C': 10}
+Best score: 0.6255489440620051
+Accuracy score: 0.6227420243708285
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[5026 3100]
+ [3061 5144]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.62      0.62      0.62      8126
+           1       0.62      0.63      0.63      8205
+
+    accuracy                           0.62     16331
+   macro avg       0.62      0.62      0.62     16331
+weighted avg       0.62      0.62      0.62     16331
+
+# Standardizing the Training and Testing feature sets....: Completed
+
+##   Running LinearSV Classifier   ##
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/Users/sujanshrestha/Library/Python/3.7/lib/python/site-packages/sklearn/svm/_base.py:986: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+Best param: {'C': 100}
+Best score: 0.566141779211511
+Accuracy score: 0.5109913661135265
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[2351 5775]
+ [2211 5994]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.52      0.29      0.37      8126
+           1       0.51      0.73      0.60      8205
+
+    accuracy                           0.51     16331
+   macro avg       0.51      0.51      0.49     16331
+weighted avg       0.51      0.51      0.49     16331
+
+# Standardizing the Training and Testing feature sets....: Completed
+
+## Running Logistic Regression Classifier  ##
+Fitting 5 folds for each of 126 candidates, totalling 630 fits
+Best param: {'C': 0.5, 'max_iter': 100, 'solver': 'liblinear', 'tol': 0.0001}
+Best score: 0.6255489440620051
+Accuracy score: 0.6201702283999755
+ROC_AUC score: 0.6949693605422098
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[4936 3190]
+ [3013 5192]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.62      0.61      0.61      8126
+           1       0.62      0.63      0.63      8205
+
+    accuracy                           0.62     16331
+   macro avg       0.62      0.62      0.62     16331
+weighted avg       0.62      0.62      0.62     16331
+
+# Standardizing the Training and Testing feature sets....: Completed
+
+## Running Logistic Regression Classifier  ##
+Fitting 5 folds for each of 126 candidates, totalling 630 fits
+Best param: {'C': 0.1, 'max_iter': 100, 'solver': 'liblinear', 'tol': 0.001}
+Best score: 0.4870018701886612
+Accuracy score: 0.5330965648153818
+ROC_AUC score: 0.5346099511607477
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[5094 3032]
+ [4593 3612]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.53      0.63      0.57      8126
+           1       0.54      0.44      0.49      8205
+
+    accuracy                           0.53     16331
+   macro avg       0.53      0.53      0.53     16331
+weighted avg       0.53      0.53      0.53     16331
+
+# Standardizing the Training and Testing feature sets....: Completed
+
+##   Running Random Forest Classifier   ##
+Fitting 5 folds for each of 18 candidates, totalling 90 fits
+Best param: {'max_depth': 6, 'max_features': 'auto', 'n_estimators': 500}
+Best score: 0.7680235679764541
+Accuracy score: 0.7661502663645827
+ROC_AUC score: 0.8349100989098722
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[6594 1532]
+ [2287 5918]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.74      0.81      0.78      8126
+           1       0.79      0.72      0.76      8205
+
+    accuracy                           0.77     16331
+   macro avg       0.77      0.77      0.77     16331
+weighted avg       0.77      0.77      0.77     16331
+
+# Standardizing the Training and Testing feature sets....: Completed
+
+##   Running Random Forest Classifier   ##
+Fitting 5 folds for each of 18 candidates, totalling 90 fits
+Best param: {'max_depth': 6, 'max_features': 'auto', 'n_estimators': 1000}
+Best score: 0.7524867845134369
+Accuracy score: 0.7387177760088176
+ROC_AUC score: 0.8173372971074259
+Confusion matrix:
+[[TN   FP]
+ [FN   TP]]
+[[5969 2157]
+ [2110 6095]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.74      0.73      0.74      8126
+           1       0.74      0.74      0.74      8205
+
+    accuracy                           0.74     16331
+   macro avg       0.74      0.74      0.74     16331
+weighted avg       0.74      0.74      0.74     16331
+
+
+Process finished with exit code 0
