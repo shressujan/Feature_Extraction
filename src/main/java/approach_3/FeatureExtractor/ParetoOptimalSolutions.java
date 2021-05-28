@@ -5,75 +5,66 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class ParetoOptimalSolutions {
 
-    private final String DELIMETER = ":";
-    List<Measurement> measurements = new ArrayList<>();
+	private final String DELIMETER = ":";
+	private final List<Measurement> measurements = new ArrayList<>();
 
-    public void loadMeasurements(String measurementFilePath) throws IOException {
-        File file = new File(measurementFilePath);
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                String[] lineTokens = line.split(DELIMETER);
-                String solFile = lineTokens[0];
-                double insertTime = Double.parseDouble(lineTokens[1]) / 1000;
-                double selectTime = Double.parseDouble(lineTokens[2]) / 1000;
-                double dbSpace = Double.parseDouble(lineTokens[3]) / 1024;
+	public void loadMeasurements(String measurementFilePath) throws IOException {
+		File file = new File(measurementFilePath);
+		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+			String line;
+			while ((line = br.readLine()) != null) {
+				String[] lineTokens = line.split(DELIMETER);
+				String solFile = lineTokens[0];
+				double insertTime = Double.parseDouble(lineTokens[1]) / 1000;
+				double selectTime = Double.parseDouble(lineTokens[2]) / 1000;
+				double dbSpace = Double.parseDouble(lineTokens[3]) / 1024;
 
-                measurements.add(new Measurement(solFile, insertTime, selectTime, dbSpace));
-            }
-        }
+				measurements.add(new Measurement(solFile, insertTime, selectTime, dbSpace));
+			}
+		}
 
-        findParetoFrontiers(measurements);
-    }
+		findParetoFrontiers(measurements);
+	}
 
-    private void findParetoFrontiers(List<Measurement> measurements) {
+	private void findParetoFrontiers(List<Measurement> measurements) {
+		// we want to cull any solution that is dominated by any other solution
+		outer: for (Measurement self : measurements) {
+			for (Measurement other : measurements) {
 
-        /* Generate Pareto Frontiers for each combination */
-        generateParetoFrontiers("insertTimes", "dbSpaces");
-        generateParetoFrontiers("insertTimes", "selectTimes");
-        generateParetoFrontiers("selectTimes", "dbSpaces");
+				// the other solution has to be as good as the current one
+				// in every dimension
+				boolean lteInsert = other.getInsertTime() <= self.getInsertTime();
+				boolean lteSelect = other.getSelectTime() <= self.getSelectTime();
+				boolean lteMemory = other.getDbSpace() <= self.getDbSpace();
+				boolean asGood = lteInsert && lteSelect && lteMemory;
 
-        System.out.println(measurements);
-    }
+				// the other solution has to be better than the current one
+				// in at least one dimension
+				boolean betterInsert = other.getInsertTime() < self.getInsertTime();
+				boolean betterSelect = other.getSelectTime() < self.getSelectTime();
+				boolean betterMemory = other.getDbSpace() < self.getDbSpace();
+				boolean better = betterInsert || betterSelect || betterMemory;
 
-    private void generateParetoFrontiers(String X, String Y) {
-        if (X.equalsIgnoreCase("insertTimes"))
-            Collections.sort(measurements, Measurement.compareByInsertTime());
-        else if (X.equalsIgnoreCase("selectTimes"))
-            Collections.sort(measurements, Measurement.compareBySelectTime());
+				// if we find any other solution that satisfies both conditions,
+				// the current one is dominated and is therefore NOT in the 
+				// Pareto front
+				if (asGood && better) {
+					self.setParetoFrontier(false);
+					continue outer;
+				}
+			}
+			// if we didn't find a dominating solution, then the current one IS
+			// in the Pareto front
+			self.setParetoFrontier(true);
+		}
+		System.out.println(measurements);
+	}
 
-        /* The first measurement in the sorted list is always a Pareto Frontier */
-        measurements.get(0).setParetoFrontier(true);
-
-        if (Y.equalsIgnoreCase("selectTimes")) {
-            double minSelectTime = measurements.get(0).getSelectTime();
-            for (int i = 1; i < measurements.size(); i++) {
-                if (Y.equalsIgnoreCase("selectTimes")) {
-                    if (measurements.get(i).getSelectTime() <= minSelectTime) {
-                        minSelectTime = measurements.get(i).getSelectTime();
-                        measurements.get(i).setParetoFrontier(true);
-                    }
-                }
-            }
-        } else if (Y.equalsIgnoreCase("dbSpaces")) {
-            double minDbSpace = measurements.get(0).getDbSpace();
-            for (int i = 1; i < measurements.size(); i++) {
-                if (Y.equalsIgnoreCase("dbSpaces")) {
-                    if (measurements.get(i).getDbSpace() <= minDbSpace) {
-                        minDbSpace = measurements.get(i).getDbSpace();
-                        measurements.get(i).setParetoFrontier(true);
-                    }
-                }
-            }
-        }
-    }
-
-    public List<Measurement> getMeasurements() {
-        return measurements;
-    }
+	public List<Measurement> getMeasurements() {
+		return measurements;
+	}
 }
