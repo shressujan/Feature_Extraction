@@ -16,6 +16,7 @@ build/
 .classpath
 .factorypath
 .project
+.pydevproject
 .settings
 .springBeans
 .sts4-cache
